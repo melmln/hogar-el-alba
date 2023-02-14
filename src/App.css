@@ -18,6 +18,16 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 li {
@@ -31,6 +41,8 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+/* Global variables */
 
 :root {
 
@@ -48,5 +60,16 @@ button:hover {
 
     /* Shadows */
     --btnShadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Global styles */
+
+main {
+    min-height: calc(100vh - 110px - 231px);
+}
+
+main h1 {
+    text-align: center;
+    margin: 20px;
 }
 

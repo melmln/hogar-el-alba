@@ -1,0 +1,26 @@
+footer {
+  height: 231px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__child li {
+  margin: 15px 0;
+}
+
+.footer__child li > * {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__child p {
+  display: inline;
+}
+
+.google-comments {
+  height: 30px;
+  line-height: 30px;
+}

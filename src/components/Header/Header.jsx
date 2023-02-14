@@ -1,4 +1,5 @@
 import './Header.css'
+import { Link } from 'react-router-dom'
 /* Logo */
 import logo from '../../assets/img/logo.png'
 
@@ -8,12 +9,14 @@ const Header = () => {
         <header>
             <nav>
                   <div className="logo-container">
-                     <img src={logo} alt="logo" className="logo" />
+                    <Link to="/">
+                      <img src={logo} alt="logo" className="logo" />
+                    </Link>
                   </div>
                    <div className="categories-container">
                         <ul className="categories">
                                 <li className="category">Nosotros</li>
-                                <li className="category">Proyectos</li>
+                                <li className="category"><Link to={'/proyectos'}>Proyectos</Link></li>
                                 <li className="category">Servicios</li>
                                 <li className="category">Contacto</li>
                         </ul>
