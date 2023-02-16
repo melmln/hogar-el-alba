@@ -39,10 +39,12 @@ header {
     font-size: 16px;
     } 
 
-.category {
-    display: flex;
+.category a {
+    width: 153px;
+    height: 50px;
+    display: inline-block;
     text-align: center;
-    padding: 15px 40px;
+    line-height: 50px;
 }
 
 .category:hover {
@@ -61,6 +63,14 @@ header {
     border-radius: 10px;
     border: transparent;
     box-shadow: var(--btnShadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-btn:hover {
+    cursor: pointer;
+    color: #fff;
 }
 
 donate-btn:hover {
