@@ -1,15 +1,21 @@
 import './QuieroAyudar.css'
+/* assets */
+import quieroAyudarBanner from '../../assets/img/grupo-de-amigos-sentados-juntos.png'
+import waveUp from '../../assets/img/svg.png'
+import waveDown from '../../assets/img/svg-2.png'
+import qr from '../../assets/img/qr-code.png'
+import line from '../../assets/img/line.png'
 
 const QuieroAyudar = () => {
   return (
     <main className='quiero-ayudar'>
       <section className='background-section'>
         <img
-          src='./assets/img/grupo-de-amigos-sentados-juntos.png'
+          src={quieroAyudarBanner}
           alt='Niños del hogar abrazados mirando el horizonte'
         />
         <h1>¡Con tu donación, ayudanos a ayudar!</h1>
-        <img src='/assets/img/svg.png' alt='' className='wave waves' />
+        <img src={waveUp} alt='' className='wave waves' />
       </section>
       <section className='qr-section'>
         <div className='qr-section__info'>
@@ -43,14 +49,14 @@ const QuieroAyudar = () => {
         </div>
         <div className='qr-section__code'>
           <h3>Escanea el código QR para colaborar</h3>
-          <img src='/assets/img/qr-code.png' alt='QR' />
+          <img src={qr} alt='QR' />
         </div>
       </section>
-      <img src='/assets/img/svg-2.png' alt='' className='wave-2 waves' />
+      <img src={waveDown} alt='' className='wave-2 waves' />
       <section className='donation-section'>
         <div className='donation-section__title'>
           <h3>Otras formas de colaborar</h3>
-          <img src='/assets/img/line.png' alt='' />
+          <img src={line} alt='' />
         </div>
         <div className='donation-section__info'>
           <div>
