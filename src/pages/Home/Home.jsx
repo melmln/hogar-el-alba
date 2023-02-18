@@ -9,10 +9,10 @@ const Home = () => {
            <div className="white-wave-container"></div>
         </div>
 
-{/*        
-        <div className="black-line-container"></div> */}
+        
                       {/* Cards */}
         <div className="cards-container">
+        <div className="black-line-container"></div> 
             <div className="left-card">
                   <p>¿Sabías que el hogar cuenta con 5 proyectos?</p>
                   <button className='conocelos-btn'>CONOCELOS</button>
