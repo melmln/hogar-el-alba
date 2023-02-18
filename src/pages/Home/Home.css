@@ -25,10 +25,10 @@
     background-image: url(../../assets/img/home/white-wave.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     padding: 100px 0;
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .cards-container {
