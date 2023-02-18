@@ -1,5 +1,11 @@
 import './Footer.css'
 import { Link } from 'react-router-dom'
+/* icons */
+import wspIcon from '../../assets/icons/whatsapp-icon.png'
+import emailIcon from '../../assets/icons/email-icon.png'
+import mapIcon from '../../assets/icons/map-icon.png'
+import fbIcon from '../../assets/icons/facebook-icon.png'
+import igIcon from '../../assets/icons/instagram-icon.png'
 
 const Footer = () => {
   return (
@@ -13,20 +19,20 @@ const Footer = () => {
               }
               target='_blank'
             >
-              <img src='./assets/icons/whatsapp-icon.png' alt='Whatsapp Icon' />
+              <img src={wspIcon} alt='Whatsapp Icon' />
               <p>+54 9 11 3310-3145</p>
             </Link>
           </li>
           <li>
             <Link to={'mailto:hogarelalba1925@gmail.com'}>
-              <img src='./assets/icons/email-icon.png' alt='Email Icon' />
+              <img src={emailIcon} alt='Email Icon' />
               <p>hogarelalba1925@gmail.com</p>
             </Link>
           </li>
           <li>
             <Link>
               {/* TODO: Link a la sección del mapa cuando esté implementada la PAGE */}
-              <img src='./assets/icons/map-icon.png' alt='Map Icon' />
+              <img src={mapIcon} alt='Map Icon' />
               <p>Juan B. Justo 803, Longchamps, Buenos Aires, Argentina.</p>
             </Link>
           </li>
@@ -37,7 +43,7 @@ const Footer = () => {
           <li>
             <Link to={'https://www.instagram.com/hogarelalba/'} target='_blank'>
               <img
-                src='./assets/icons/instagram-icon.png'
+                src={igIcon}
                 alt='Instagram Icon'
               />
               <p>@hogarelalba</p>
@@ -50,7 +56,7 @@ const Footer = () => {
               }
               target='_blank'
             >
-              <img src='./assets/icons/facebook-icon.png' alt='Facebook Icon' />
+              <img src={fbIcon} alt='Facebook Icon' />
               <p>Hogar El Alba</p>
             </Link>
           </li>
