@@ -7,17 +7,8 @@
     position: relative;
 }
  
-.black-line-container {
-    background-image: url(../../assets/img/home/black-line.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 130px;
-    bottom: 120px;
-} 
 
-.white-wave-container {
+ .white-wave-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +16,30 @@
     background-image: url(../../assets/img/home/white-wave.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    padding: 100px 0;
+    padding: 30px 0;
     position: absolute;
     bottom: 0;
-}
+    width: 100%;
+} 
+
+/* .black-line-container {
+    background-image: url(../../assets/img/home/black-line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    bottom: 120px;
+}  */
+
+
 
 .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    padding: 50px 0;
+    position: relative;
+    bottom: 150px;
     font-family: var(--capriola);
     font-size: 20px;
     color: var(--white);

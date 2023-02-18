@@ -5,11 +5,12 @@ import whiteLineLoop from '../../assets/img/home/white-line-loop.png'
 const Home = () => {
   return (
     <main className='home'>
-        <div className="banner-container"></div>
-        <div className="white-wave-container">
-        <div className="black-line-container"></div>
-
+        <div className="banner-container">
+           <div className="white-wave-container"></div>
         </div>
+
+{/*        
+        <div className="black-line-container"></div> */}
                       {/* Cards */}
         <div className="cards-container">
             <div className="left-card">
