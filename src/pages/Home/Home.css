@@ -6,17 +6,16 @@
     width: 100%;
     position: relative;
 }
-/* 
+ 
 .black-line-container {
     background-image: url(../../assets/img/home/black-line.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    background-color: red;
     width: 100%;
     height: 130px;
-    
-} */
+    bottom: 120px;
+} 
 
 .white-wave-container {
     display: flex;
