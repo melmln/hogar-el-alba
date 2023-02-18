@@ -1,5 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700;800&family=Capriola&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
 
 
   /* Desktop 1440px x 907 */
@@ -10,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Asap', sans-serif;
+    font-family: var(--asap);
 }
 
 html {
@@ -33,7 +35,7 @@ li {
 }
 
 button {
-    Font-family: 'Capriola', sans-serif;
+    font-family: var(--capriola);
 }
 
 button:hover {
@@ -59,14 +61,16 @@ h1, h2, h3, h4, h5, h6 {
     --red:  #EB574F;
     --blue: #1B5A9F;
     --lightBlue: #4B8BBF;
+    --yellow: #F4950C;
 
 
     /* Fonts */
-    --capriola: font-family: 'Capriola', sans-serif;
-    --asap: font-family: 'Asap', sans-serif;
+    --capriola:'Capriola', sans-serif;
+    --asap: 'Asap', sans-serif;
 
     /* Shadows */
     --btnShadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    --btnShadowTwo: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Global styles */
