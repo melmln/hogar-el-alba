@@ -2,3 +2,51 @@
     background-color: var(--lightBlue);
 }
 
+.servicios-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 13.5px;
+}
+
+.line-servicios-title {
+    height: 4px;
+    background-color: var(--white);
+    width: 100px;
+    
+}
+
+.servicios-title {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    padding:0 80px;
+    padding-bottom: 100px;
+    
+}
+
+.first-row, .second-row, .third-row {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.first-row img:hover, .second-row img:hover, .third-row img:hover {
+    cursor: pointer;
+    filter: brightness(0.6);
+}
