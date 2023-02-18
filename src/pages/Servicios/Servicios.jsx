@@ -3,7 +3,24 @@ import './Servicios.css'
 const Servicios = () => {
   return (
     <main className="servicios">
-      <h1>Servicios Section</h1>
+        <div className="first-row">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+        </div>
+        <div className="second-row">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+        </div>
+        <div className="third-row">
+        <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+        </div>
     </main>
   )
 }
