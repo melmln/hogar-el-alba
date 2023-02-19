@@ -33,7 +33,7 @@
     width: 100%;
     gap: 20px;
     flex-direction: column;
-    padding:0 80px;
+    padding:0 60px;
     padding-bottom: 100px;
     
 }
@@ -46,7 +46,27 @@
     width: 100%;
 }
 
-.first-row img:hover, .second-row img:hover, .third-row img:hover {
+
+.servicio-card {
+    position: relative;
+}
+
+.servicio-card-title {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 24px;
+    bottom: 4px;
+    width: 305px;
+    height: 200px;
+    padding-top: 120px;
+    color: transparent;
+    background-color: transparent;
+    left: 0;
+}
+
+.servicio-card-title:hover {
     cursor: pointer;
-    filter: brightness(0.6);
+    color: var(--white);
+    background-color: #1F1E2199;
 }
