@@ -1,0 +1,135 @@
+.contact .contact-title {
+  color: var(--white);
+  background-color: var(--lightBlue);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-title h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contact-title h1::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid var(--white);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-title h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.form-section {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section form {
+  width: 600px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.form-section h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  align-self: start;
+  margin-bottom: 20px;
+}
+
+.form-section h2::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid var(--lightBlue);
+  width: 20%;
+}
+
+.form-section input,
+.form-section textarea {
+  background: #efeff3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 0;
+}
+
+.form-section input {
+  height: 50px;
+}
+
+input[id='nombre'],
+input[id='telefono'] {
+  width: 290px;
+}
+
+input[id='email'] {
+  width: 600px;
+}
+
+input[type='submit'] {
+  width: 150px;
+  height: 50px;
+  left: 234px;
+  top: 403px;
+  color: var(--white);
+  background: #eb574f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+  background: var(--white);
+  color: var(--red);
+}
+
+::placeholder {
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form-section textarea {
+  height: 170px;
+  width: 600px;
+  resize: none;
+}
+
+.form-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  max-width: 600px;
+}
