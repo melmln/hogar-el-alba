@@ -18,7 +18,7 @@
 .contact-title h1::after {
   content: '';
   display: block;
-  border-bottom: 2px solid var(--white);
+  border-bottom: 4px solid var(--white);
   width: 50%;
   margin: 0 auto;
 }
@@ -60,7 +60,7 @@
 .form-section h2::after {
   content: '';
   display: block;
-  border-bottom: 2px solid var(--lightBlue);
+  border-bottom: 4px solid var(--lightBlue);
   width: 20%;
 }
 
@@ -132,4 +132,35 @@ input[type='submit']:hover {
   align-items: center;
   width: 600px;
   max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-title h2 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 10px;
+    }
+
+    .form-section form {
+    width: 100%;
+    }
+
+    .form-section h2 {
+    align-self: center;
+    }
+
+  .form-section div {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[id='nombre'],
+  input[id='telefono'],
+  input[id='email'],
+  .form-section textarea {
+    width: 80%;
+  }
 }
