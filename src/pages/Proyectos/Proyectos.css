@@ -14,17 +14,20 @@
   margin: 10px auto;
 }
 
-.card-container {
+.proyectos section .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   color: var(--white);
+  padding: 20px;
+  max-width: 1440px;
 }
 
 .card-container .proyect-card {
   min-height: 470px;
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .proyect-card {
