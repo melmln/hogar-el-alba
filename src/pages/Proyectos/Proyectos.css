@@ -1,0 +1,73 @@
+.proyectos h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.proyectos h1::after {
+  content: '';
+  display: block;
+  border-bottom: 4px solid black;
+  width: 150px;
+  margin: 10px auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: var(--white);
+}
+
+.card-container .proyect-card {
+  min-height: 470px;
+  width: 400px;
+}
+
+.proyect-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.proyect-card img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.proyect-card p {
+  font-family: 'Capriola';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  margin: 25px 35px;
+}
+
+.proyect-card .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  background-color: #ebebf099;
+  height: 117px;
+}
+
+.proyect-card .title h2,
+.proyect-card .title span {
+  font-family: var(--capriola);
+  display: block;
+}
+
+.title h2 {
+  font-size: 1rem;
+}
+
+.title span {
+  font-size: 2rem;
+}
