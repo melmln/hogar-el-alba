@@ -6,6 +6,11 @@ footer {
   justify-content: space-evenly;
 }
 
+.footer-icon{
+  height: auto;
+  width: 30px;
+}
+
 .footer__child li {
   margin: 15px 0;
 }

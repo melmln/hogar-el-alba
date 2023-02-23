@@ -47,7 +47,7 @@
 
 .qr-section__info {
   justify-content: space-between;
-  margin-left: 80px;
+  margin: 0 2%;
 }
 
 .qr-section__info h3 {
@@ -66,6 +66,7 @@
 }
 
 .qr-section__code h3 {
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -115,6 +116,7 @@
 
 .donation-section__info h5,
 .donation-section__info span {
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
 }
@@ -141,4 +143,81 @@
   line-height: 30px;
   text-align: center;
   color: var(--blue);
+}
+
+@media (max-width: 987px) {
+  .donation-section__info ul {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .qr-section {
+    flex-direction: column;
+    align-items: center;
+    min-height: 170vh;
+  }
+
+  .qr-section__info {
+    margin: 0;
+  }
+
+  .donation-section__title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-section__title h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .donation-section__title img {
+    width: 85%;
+  }
+
+  .donation-section__info {
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .donation-section__info h5,
+  .donation-section__info span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .donation-section__info h4 {
+    width: 100%;
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+
+  .qr-section div {
+    min-height: 40vh;
+    text-align: center;
+  }
+
+  div.qr-section__code {
+    min-height: 70vh;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .quiero-ayudar h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .donation-section__info ul{
+    line-height: 20px;
+  }
 }

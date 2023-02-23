@@ -19,20 +19,19 @@ const Footer = () => {
               }
               target='_blank'
             >
-              <img src={wspIcon} alt='Whatsapp Icon' />
+              <img className='footer-icon' src={wspIcon} alt='Whatsapp Icon' />
               <p>+54 9 11 3310-3145</p>
             </Link>
           </li>
           <li>
             <Link to={'mailto:hogarelalba1925@gmail.com'}>
-              <img src={emailIcon} alt='Email Icon' />
+              <img className='footer-icon' src={emailIcon} alt='Email Icon' />
               <p>hogarelalba1925@gmail.com</p>
             </Link>
           </li>
           <li>
-            <Link>
-              {/* TODO: Link a la sección del mapa cuando esté implementada la PAGE */}
-              <img src={mapIcon} alt='Map Icon' />
+            <Link to='https://goo.gl/maps/SUCCmmwMF9VKa8XP8' target='_blank'>
+              <img className='footer-icon' src={mapIcon} alt='Map Icon' />
               <p>Juan B. Justo 803, Longchamps, Buenos Aires, Argentina.</p>
             </Link>
           </li>
@@ -42,10 +41,7 @@ const Footer = () => {
         <ul>
           <li>
             <Link to={'https://www.instagram.com/hogarelalba/'} target='_blank'>
-              <img
-                src={igIcon}
-                alt='Instagram Icon'
-              />
+              <img className='footer-icon' src={igIcon} alt='Instagram Icon' />
               <p>@hogarelalba</p>
             </Link>
           </li>
@@ -56,7 +52,7 @@ const Footer = () => {
               }
               target='_blank'
             >
-              <img src={fbIcon} alt='Facebook Icon' />
+              <img className='footer-icon' src={fbIcon} alt='Facebook Icon' />
               <p>Hogar El Alba</p>
             </Link>
           </li>
