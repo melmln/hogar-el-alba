@@ -1,31 +1,112 @@
 footer {
-  height: 231px;
+  min-height: 230px;
   background-color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding-top: 20px;
 }
 
-.footer-icon{
+.footer-icon {
   height: auto;
   width: 30px;
 }
 
-.footer__child li {
-  margin: 15px 0;
-}
-
-.footer__child li > * {
+.footer .flex {
   display: flex;
   align-items: center;
-  gap: 15px;
+  text-align: left;
+  width: 200px;
+  gap: 10px;
 }
 
-.footer__child p {
-  display: inline;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'footer__phone footer__instagram'
+    'footer__email footer__facebook'
+    'footer__address footer__google';
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
 }
 
-.google-comments {
-  height: 30px;
-  line-height: 30px;
+.footer__phone {
+  grid-area: footer__phone;
+}
+
+.footer__email {
+  grid-area: footer__email;
+}
+
+.footer__address {
+  grid-area: footer__address;
+}
+
+.footer__instagram {
+  grid-area: footer__instagram;
+}
+
+.footer__facebook {
+  grid-area: footer__facebook;
+}
+
+.footer__google {
+  grid-area: footer__google;
+}
+
+@media (max-width: 568px) {
+  .container .hide {
+    display: none;
+  }
+
+  .footer .flex {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container {
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'footer__phone footer__email footer__instagram footer__facebook'
+      '. footer__address footer__address .'
+      '. footer__google footer__google .';
+  }
+
+  .footer__phone {
+    grid-area: footer__phone;
+  }
+
+  .footer__instagram {
+    grid-area: footer__instagram;
+  }
+
+  .footer__email {
+    grid-area: footer__email;
+  }
+
+  .footer__facebook {
+    grid-area: footer__facebook;
+  }
+
+  .footer__address {
+    grid-area: footer__address;
+  }
+
+  .footer__google {
+    grid-area: footer__google;
+  }
+
+  .google-comments{
+    text-align: center;
+  }
 }

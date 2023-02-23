@@ -10,62 +10,59 @@ import igIcon from '../../assets/icons/instagram-icon.png'
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer__child'>
-        <ul>
-          <li>
+        <ul className='container'>
+          <li className='footer__phone'>
             <Link
               to={
                 'https://api.whatsapp.com/send?phone=+5491133103145&text=%C2%A1Hola%20Hogar%20El%20Alba!%20Quiero%20comunicarme%20con%20ustedes%20por%20el%20siguiente%20motivo:'
               }
               target='_blank'
+              className='flex'
             >
               <img className='footer-icon' src={wspIcon} alt='Whatsapp Icon' />
-              <p>+54 9 11 3310-3145</p>
+              <p className='hide'>+54 9 11 3310-3145</p>
             </Link>
           </li>
-          <li>
-            <Link to={'mailto:hogarelalba1925@gmail.com'}>
+          <li className='footer__email'>
+            <Link to={'mailto:hogarelalba1925@gmail.com'} className='flex'>
               <img className='footer-icon' src={emailIcon} alt='Email Icon' />
-              <p>hogarelalba1925@gmail.com</p>
+              <p className='hide'>hogarelalba1925@gmail.com</p>
             </Link>
           </li>
-          <li>
-            <Link to='https://goo.gl/maps/SUCCmmwMF9VKa8XP8' target='_blank'>
+          <li className='footer__address'>
+            <Link to='https://goo.gl/maps/SUCCmmwMF9VKa8XP8' target='_blank' className='flex'>
               <img className='footer-icon' src={mapIcon} alt='Map Icon' />
               <p>Juan B. Justo 803, Longchamps, Buenos Aires, Argentina.</p>
             </Link>
           </li>
-        </ul>
-      </div>
-      <div className='footer__child'>
-        <ul>
-          <li>
-            <Link to={'https://www.instagram.com/hogarelalba/'} target='_blank'>
+          <li className='footer__instagram'>
+            <Link to={'https://www.instagram.com/hogarelalba/'} target='_blank' className='flex'>
               <img className='footer-icon' src={igIcon} alt='Instagram Icon' />
-              <p>@hogarelalba</p>
+              <p className='hide' >@hogarelalba</p>
             </Link>
           </li>
-          <li>
+          <li className='footer__facebook'>
             <Link
               to={
                 'https://www.facebook.com/people/Hogar-El-Alba/100047750509164/'
               }
               target='_blank'
+              className='flex'
             >
               <img className='footer-icon' src={fbIcon} alt='Facebook Icon' />
-              <p>Hogar El Alba</p>
+              <p className='hide'>Hogar El Alba</p>
             </Link>
           </li>
-          <li>
+          <li className='footer__google'>
             <Link
               to={'https://www.google.com/search?q=hogar+el+alba'}
               target='_blank'
+              className='flex'
             >
               <p className='google-comments'>82 comentarios de google</p>
             </Link>
           </li>
         </ul>
-      </div>
     </footer>
   )
 }
