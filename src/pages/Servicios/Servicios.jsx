@@ -81,7 +81,7 @@ const Servicios = () => {
                         <div className="image-container">
                         <img src={plaza} alt="plaza" />                  
                         </div>
-                        <div className="caption">Plaza</div>
+                        <div className="caption">Plaza de juegos</div>
                     </div>
                   
                     <div className="card-image-container">
