@@ -16,77 +16,21 @@ import campamento from '../../assets/img/servicios/campamento.png'
 const Servicios = () => {
   return (
     <main className="servicios">
-          <div className="servicios-title-container">
-            <h2 className='servicios-title'>Servicios que ofrecemos</h2>
-            <div className="line-servicios-title"></div>
-          </div>
-          <div className="row-container">
-              <div className="first-row">
-
-                <div className='servicio-card'>
-                  <img src={zonaCarpas} alt="zona-de-carpas" />
-                   <div className='servicio-card-title'>Zona de carpas</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={eventosRecreativos} alt="eventos-recreativos" />
-                  <div className="servicio-card-title">Eventos recreativos</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={eventosDeportivos} alt="niños" />
-                  <div className="servicio-card-title">Eventos deportivos</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={eventosEmpresariales} alt="silla" />
-                  <div className="servicio-card-title">Eventos empresariales</div>
-                </div>
-            </div>
-
-            <div className="second-row">
-                <div className="servicio-card">
-                  <img src={eventosSociales} alt="reunión" />
-                      <div className="servicio-card-title">Eventos sociales</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={gimnasio} alt="" />
-                  <div className="servicio-card-title">Gimnasio</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={zonaPicnic} alt="" />
-                  <div className="servicio-card-title">Zona de picnic</div>
-                </div>
-
-                <div className="servicio-card">
-                  <img src={quincho} alt="" />
-                  <div className="servicio-card-title">Quincho</div>
-                </div>
-            </div>
-
-            <div className="third-row">
-              <div className="servicio-card">
-                  <img src={plaza} alt="" />
-                  <div className="servicio-card-title">Plaza de juegos</div>
-              </div>
-
-              <div className="servicio-card">
-                  <img src={pileta} alt="" />
-                  <div className="servicio-card-title">Pileta</div>
-              </div>
-
-              <div className="servicio-card">
-                  <img src={aireLibre} alt="" />
-                  <div className="servicio-card-title">Eventos al aire libre</div>
-              </div>
-
-              <div className="servicio-card">
-                  <img src={campamento} alt="" />
-                  <div className="servicio-card-title">Campamento Holanda</div>
-                </div>
-            </div>
+            <h1 className='servicios-title'>Servicios que ofrecemos</h1>
+          
+          <div className="gallery-container">
+              <img src={zonaCarpas} alt="zona-de-carpas" />
+              <img src={eventosRecreativos} alt="eventos-recreativos" />
+              <img src={eventosDeportivos} alt="eventos-deportivos" />
+              <img src={eventosEmpresariales} alt="eventos-empresariales" />               
+              <img src={eventosSociales} alt="eventos-sociales" />                
+              <img src={gimnasio} alt="gimnasio" />                 
+              <img src={zonaPicnic} alt="zona-de-picnic" />
+              <img src={quincho} alt="quincho" />                
+              <img src={plaza} alt="plaza" />                  
+              <img src={pileta} alt="pileta" />                   
+              <img src={aireLibre} alt="eventos-al-aire-libre" />                 
+              <img src={campamento} alt="campamento-holanda" />       
           </div>
     </main>
   )
