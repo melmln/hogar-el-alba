@@ -1,94 +1,108 @@
+/* Hero */
+
 .banner-container {
     background-image: url(../../assets/img/home/home.png);
     background-repeat: no-repeat;
     background-size: cover;
+/*     background-position: center;
+ */    background-position: bottom;
     height: 750px;
     width: 100%;
     position: relative;
 }
- 
 
- .white-wave-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-image: url(../../assets/img/home/white-wave.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px 0;
+ .white-wave {
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
 } 
 
-.black-line-container {
-    background-image: url(../../assets/img/home/black-line.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 130px;
-    bottom: 120px;
-}  
 
+/* Cards */
 
+.home-cards-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     gap: 30px;
+     position: absolute;
+     top: 450px;
+     left: 0;
+     padding: 0 90px;
+     padding-bottom: 40px;
+}
 
-.cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.proyectos, .adoptar, .donar {
     position: relative;
-    bottom: 150px;
-    font-family: var(--capriola);
-    font-size: 20px;
-    color: var(--white);
-    gap: 30px;
+}
+
+.home-card img {
     width: 100%;
+    height: auto;
 }
 
-.cards-container p {
-    width: 250px;
-    text-align: center;
-}
-
-.left-card {
-    background-image: url('../../assets//img/home/yellow-card.png');
-
-}
-
-.central-card {
-    background-image: url('../../assets//img/home/red-card.png');
-}
-
-.right-card {
-    background-image: url('../../assets//img/home/blue-card.png');
-}
-
-.left-card, .central-card, .right-card {
+.home-card-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 248px;
-    position: relative;
-    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
 }
 
+.home-card-content p {
+    width: 100%;
+    font-family: var(--capriola);
+    font-size: 20px;
+    color: var(--white);
+    text-align: center;
+    width: 250px;
+    font-weight: 400;
+}
 
+.home-card-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    box-shadow: var(--btnShadowTwo);
+    border: none; 
+}
+
+.proyectos-btn {
+    color: var(--yellow);
+}
+
+.donar-btn {
+    color: var(--red);
+}
+
+.adoptar-btn {
+    color: var(--lightBlue);
+}
+
+.proyectos-btn:hover, .donar-btn:hover, .adoptar-btn:hover {
+    cursor: pointer;
+}
+
+/* W.C.M quote */
 .quote-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 369px;
     background-color: var(--lightBlue);
     color: var(--white);
     font-family: 'Capriola', sans-serif;
     font-weight: 400;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 
 .quote-line-container {
@@ -115,35 +129,18 @@
 }
 
 .quote-william-morris {
-    width: 800px;
     margin-top: 50px;
     font-size: 18px;
     text-align: center;
     line-height: 40px;
+    max-width: 750px;
+
 }
 
-.conocelos-btn, .sumate-btn, .te-contamos-btn {
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 8px;
-    box-shadow: var(--btnShadowTwo);
-    border: none;
-  
-}
+/* Media queries */
 
-.conocelos-btn:hover, .sumate-btn:hover, .te-contamos-btn:hover {
-    cursor: pointer;
-}
-
-.conocelos-btn {
-    color: var(--yellow);
-}
-
-.sumate-btn {
-    color: var(--red);
-}
-
-.te-contamos-btn {
-    color: var(--lightBlue);
+@media screen and (max-width: 1225px) {
+    .home-cards-container {
+        top: 510px;
+    }
 }
