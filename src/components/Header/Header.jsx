@@ -1,6 +1,7 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
 import logo from '../../../src/logo.png'
+import BurgerMenu from '../BurgerMenu/BurgerMenu'
 
 const Header = () => {
   return (
@@ -23,6 +24,9 @@ const Header = () => {
                         <Link to='/quiero-ayudar' className="donate-btn">QUIERO AYUDAR</Link>
                    </div>
 
+                    <div className="bm-container">
+                      <BurgerMenu/>
+                    </div>
             </nav>
         </header>
     </>

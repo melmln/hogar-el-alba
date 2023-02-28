@@ -2,7 +2,7 @@ import './Home.css'
 /* assets */
 import whiteLine from '../../assets/img/home/white-line.png'
 import whiteLineLoop from '../../assets/img/home/white-line-loop.png'
-import whiteWave from '../../assets/img/home/white-wave.png'
+import whiteWave from '../../assets/img/home/white-wave-2.png'
 import yellowCard from '../../assets/img/home/yellow-card.png'
 import redCard from '../../assets/img/home/red-card.png'
 import blueCard from '../../assets/img/home/blue-card.png'
@@ -13,7 +13,7 @@ const Home = () => {
 
         <div className="banner-container">
           <div className="white-wave-container">
-            <img className="white-wave" src={whiteWave}/>
+            <img className="white-wave" src={whiteWave} alt='white-wave'/>
           </div>
         </div>
         

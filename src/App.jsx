@@ -13,8 +13,8 @@ import QuieroAyudar from './pages/QuieroAyudar/QuieroAyudar'
 function App() {
   return (
     <>
-{/*       <Header />
- */}      <Routes>
+       <Header />
+       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/nosotros' element={<Nosotros/>} />
         <Route path='/proyectos' element={<Proyectos />} />

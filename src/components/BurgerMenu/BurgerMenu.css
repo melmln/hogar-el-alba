@@ -1,0 +1,15 @@
+@media screen and (min-width: 1230px) {
+    .bm-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .bm-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 980px) {
+    .bm-container {
+        display: block;
+    }
+}
