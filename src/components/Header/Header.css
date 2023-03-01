@@ -81,6 +81,10 @@ donate-btn:hover {
   cursor: pointer;
 }
 
+.bm-container {
+  display: none;
+}
+
 
 @media screen and (max-width: 980px) {
   header {
@@ -104,18 +108,68 @@ donate-btn:hover {
   
   .logo-container {
     display: flex;
+    justify-content: flex-end;
     width: 100%;
   }
   
   .logo {
-    width: 145px;
+    width: 94px;
   }
 
-  .category {
-    display: none;
+  .bm-container {
+    display: block;
   }
-  .donate-btn {
-    display: none;
-  }
+  
+.categories-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 86px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 212px;
+  height: 100vh;
+}
+
+.categories {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  color: var(--black);
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.category {
+  width: 100%;
+}
+
+.category a {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  padding-left: 30px;
+  text-align: start;
+  line-height: 50px;
+  font-family: 'Capriola', sans-serif;
+}
+
+
+.category:hover {
+  border-radius: 0;
+  background-color: var(--categoryHover);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.donate-btn {
+  width: 143px;
+  height: 41px;
+  font-size: 14px;
+  margin-left: 25px;
+}
  
 }

@@ -1,7 +1,9 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
+/* Assets */
 import logo from '../../../src/logo.png'
-import BurgerMenu from '../BurgerMenu/BurgerMenu'
+import bm from '../../assets/img/bm.png'
+
 
 const Header = () => {
   return (
@@ -25,7 +27,7 @@ const Header = () => {
                    </div>
 
                     <div className="bm-container">
-                      <BurgerMenu/>
+                       <img src={bm} alt="burguer-menu" />
                     </div>
             </nav>
         </header>
