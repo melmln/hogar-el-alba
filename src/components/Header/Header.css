@@ -120,6 +120,9 @@ donate-btn:hover {
     display: block;
   }
 
+  .bm-container:hover {
+    cursor: pointer;
+  }
   
 .categories-container {
   display: flex;
@@ -144,7 +147,7 @@ donate-btn:hover {
 
 .categories {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   width: 100%;
   color: var(--black);
   font-size: 16px;

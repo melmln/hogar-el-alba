@@ -45,7 +45,7 @@ const Home = () => {
                     <img src={blueCard} alt="blue-card" className="img-proyectos" />
                     <div className="home-card-content">
                         <p>¿Sabés cuales son los requisitos para adoptar?</p>
-                        <Link to='/#'>
+                        <Link to='/#g'>
                           <button className='home-card-btn adoptar-btn'>TE CONTAMOS</button>
                         </Link>
                     </div>
