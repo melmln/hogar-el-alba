@@ -44,9 +44,9 @@ const Home = () => {
                 <div className="home-card adoptar">
                     <img src={blueCard} alt="blue-card" className="img-proyectos" />
                     <div className="home-card-content">
-                        <p>¿Sabés cuales son los requisitos para adoptar?</p>
-                        <Link to='/#g'>
-                          <button className='home-card-btn adoptar-btn'>TE CONTAMOS</button>
+                        <p>¿Querés conocer los requisitos para adoptar?</p>
+                        <Link to='/contacto'>
+                          <button className='home-card-btn adoptar-btn'>CONTACTATE</button>
                         </Link>
                     </div>
                 </div>  
@@ -57,7 +57,7 @@ const Home = () => {
             <div className="quote-line-container">
                 <img className='line'
                 src={whiteLine} alt="line" />
-                <h3>Frase Lema WILLIAM CASE MORRIS</h3>
+                <h1>Frase Lema WILLIAM CASE MORRIS</h1>
                 <img className='line-loop'
                 src={whiteLineLoop} alt="line-loop" />
             </div>

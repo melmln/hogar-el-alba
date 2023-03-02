@@ -115,8 +115,9 @@
     font-size: 14px;
 }
 
-.quote-line-container h3 {
+.quote-line-container h1 {
     text-align: center;
+    font-size: 14px;
 }
 
 .line, .line-loop {
