@@ -130,7 +130,7 @@ donate-btn:hover {
   top: 100px;
   left: 0;
   bottom: 0;
-  height: 2060px;
+  height: 100%;
   flex-direction: column;
   background-color: var(--white);
   width: 212px;
@@ -183,15 +183,3 @@ donate-btn:hover {
  
 }
 
-@media screen and (max-width: 520px) {
-
-  .categories-container {
-    height: 2000px;
-  }
-}
-@media screen and (max-width: 375px) {
-
-  .categories-container {
-    height: 1940px;
-  }
-}
