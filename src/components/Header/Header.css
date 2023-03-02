@@ -13,7 +13,6 @@ nav {
   height: 110px;
   background-color: var(--white);
   padding: 0 50px;
-
 }
 
 .logo-container {
@@ -104,6 +103,7 @@ donate-btn:hover {
     background-color: var(--white);
     padding: 0 50px;
     flex-direction: row-reverse;
+
   }
   
   .logo-container {
@@ -119,19 +119,27 @@ donate-btn:hover {
   .bm-container {
     display: block;
   }
+
   
 .categories-container {
   display: flex;
   align-items: flex-start;
   padding-top: 86px;
   position: absolute;
-  z-index: 5;
-  top: 0;
+  z-index: 20;
+  top: 100px;
   left: 0;
+  bottom: 0;
+  height: 2060px;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   width: 212px;
-  height: 100vh;
+  transform: translateX(-100%); /* oculto */
+  transition: 0.3s ease all;
+}
+
+.categories-container.open {
+  transform: translateX(0) !important;
 }
 
 .categories {
@@ -141,6 +149,7 @@ donate-btn:hover {
   color: var(--black);
   font-size: 16px;
   flex-direction: column;
+
 }
 
 .category {

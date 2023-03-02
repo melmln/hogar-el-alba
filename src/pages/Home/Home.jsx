@@ -6,6 +6,7 @@ import whiteWave from '../../assets/img/home/white-wave-2.png'
 import yellowCard from '../../assets/img/home/yellow-card.png'
 import redCard from '../../assets/img/home/red-card.png'
 import blueCard from '../../assets/img/home/blue-card.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -24,7 +25,9 @@ const Home = () => {
                   <img src={yellowCard} alt="yellow-card" className="img-proyectos" />
                   <div className="home-card-content">
                       <p>¿Sabías que el hogar cuenta con 5 proyectos?</p>
-                      <button className='home-card-btn proyectos-btn'>CONOCELOS</button>
+                      <Link to="/proyectos">
+                        <button className='home-card-btn proyectos-btn'>CONOCELOS</button>
+                      </Link>
                   </div>
               </div>
 
@@ -32,7 +35,9 @@ const Home = () => {
                   <img src={redCard} alt="red-card" className="img-proyectos" />
                   <div className="home-card-content">
                         <p>Tu aporte es muy valioso para el hogar</p>
-                        <button className='home-card-btn donar-btn'>SUMATE</button>
+                        <Link to='/quiero-ayudar'>
+                          <button className='home-card-btn donar-btn'>SUMATE</button>
+                        </Link>
                   </div>
               </div>
 
@@ -40,7 +45,9 @@ const Home = () => {
                     <img src={blueCard} alt="blue-card" className="img-proyectos" />
                     <div className="home-card-content">
                         <p>¿Sabés cuales son los requisitos para adoptar?</p>
-                        <button className='home-card-btn adoptar-btn'>TE CONTAMOS</button>
+                        <Link to='/#'>
+                          <button className='home-card-btn adoptar-btn'>TE CONTAMOS</button>
+                        </Link>
                     </div>
                 </div>  
         </div>
