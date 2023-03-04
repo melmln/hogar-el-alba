@@ -1,16 +1,25 @@
 import './Nosotros.css'
 /* assets */
 import waveNosotros from '../../assets/img/nosotros/wave-acerca-nosotros.png'
+import { Link } from 'react-router-dom'
 const Nosotros = () => {
   return (
     <main className="nosotros">
         <div className="info-nosotros-container">
             
             <div className="subcategories-nosotros-container">
-                <button className="acerca-nosotros nosotros-btn">Acerca de nosotros</button>
-                <button className="wcm-nosotros nosotros-btn">William C. Morris</button>
-                <button className="historia-nosotros nosotros-btn">Historia del hogar</button>
-                <button className="financiación-nosotros nosotros-btn">Cómo nos financiamos</button>
+                <Link to='/nosotros'>
+                  <button className="acerca-nosotros-btn">Acerca de nosotros</button>
+                </Link>
+                <Link to='/william-morris'>
+                  <button className="nosotros-btn">William C. Morris</button>
+                </Link>
+                <Link to='/historia'>
+                  <button className="nosotros-btn">Historia del hogar</button>
+                </Link>
+                <Link to='/financiamiento'>
+                  <button className="nosotros-btn">Cómo nos financiamos</button>
+                </Link>
             </div>
             
             <div className='info-text-nosotros-container'>
@@ -22,8 +31,10 @@ const Nosotros = () => {
                 </div>
             </div>
 
-{/*         <img src={waveNosotros} alt="" className="acerca-nosotros-wave" />
- */}        </div>
+         </div>
+          <div className="acerca-nosotros-wave-container">
+            <img src={waveNosotros} alt="wave-acerca-nosotros" className="acerca-nosotros-wave" />
+          </div>
     </main>
   )
 }

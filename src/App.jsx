@@ -9,6 +9,9 @@ import Nosotros from './pages/Nosotros/Nosotros'
 import Servicios from './pages/Servicios/Servicios'
 import Contacto from './pages/Contacto/Contacto'
 import QuieroAyudar from './pages/QuieroAyudar/QuieroAyudar'
+import WilliamMorris from './components/Nosotros/WilliamMorris/WilliamMorris'
+import Historia from './components/Nosotros/Historia/Historia'
+import Financiamiento from './components/Nosotros/Financiamiento/Financiamiento'
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path='/servicios' element={<Servicios/>} />
         <Route path='/contacto' element={<Contacto/>} />
         <Route path='/quiero-ayudar' element={<QuieroAyudar/>} />
+        <Route path='/william-morris' element={<WilliamMorris/>}/>
+        <Route path='/historia' element={<Historia/>}/>
+        <Route path='/financiamiento' element={<Financiamiento/>}/>
         <Route path='*' element={<h1>404 - Not Found</h1>} />
       </Routes>
       <Footer />
