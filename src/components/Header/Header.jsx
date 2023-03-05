@@ -15,7 +15,6 @@ const Header = () => {
   }
 
   return (
-    <>
         <header>
             <nav>
                   <div className="logo-container">
@@ -23,15 +22,15 @@ const Header = () => {
                       <img src={logo} alt="logo" className="logo" />
                     </Link>
                   </div>
-                   <div className={`categories-container ${bmOpen && 'open'}`}>
-                        <ul className="categories">
-                                <li className="category"><Link to='/nosotros' >Nosotros</Link></li>
-                                <li className="category"><Link to='/proyectos'>Proyectos</Link></li>
-                                <li className="category"><Link to='/servicios'>Servicios</Link></li>
-                                <li className="category"><Link to='/contacto'>Contacto</Link></li>
-                        </ul>
-                        
-                        <Link to='/quiero-ayudar' className="donate-btn">QUIERO AYUDAR</Link>
+                    <div className={`categories-container ${bmOpen && 'open'}`}>
+                          <ul className="categories">
+                                  <li className="category"><Link to='/nosotros' >Nosotros</Link></li>
+                                  <li className="category"><Link to='/proyectos'>Proyectos</Link></li>
+                                  <li className="category"><Link to='/servicios'>Servicios</Link></li>
+                                  <li className="category"><Link to='/contacto'>Contacto</Link></li>
+                          </ul>
+                          
+                          <Link to='/quiero-ayudar' className="donate-btn">QUIERO AYUDAR</Link>
                    </div>
 
                     <div className={`bm-container ${bmOpen && 'open'}`} onClick={bmChange}>
@@ -39,7 +38,6 @@ const Header = () => {
                     </div>
             </nav>
         </header>
-    </>
   )
 }
 

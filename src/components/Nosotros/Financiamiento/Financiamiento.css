@@ -1,0 +1,126 @@
+.financiamiento {
+    background-image: url(../../../assets/img/nosotros/financiamiento.png);
+    background-color: var(--lightBlue);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 850px;
+    background-position-y: bottom;
+} 
+
+.info-financiamiento-container {
+    display: flex;
+    gap: 50px;
+    background-color: var(--lightBlue);
+    padding: 83px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.financiamiento-wave-container {
+    position: relative;
+}
+
+.financiamiento-wave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subcategories-financiamiento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nosotros-btn {
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 230px;
+    text-align: start;
+    padding-left: 15px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.financiamiento-btn {
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 230px;
+    text-align: start;
+    padding-left: 15px;
+    background-color: var(--white);
+    color: var(--red);
+    cursor: pointer;
+}
+
+.subcategories-financiamiento-container button:hover {
+    background-color: var(--white);
+    color: var(--red);
+    cursor: pointer;
+}
+.subcategories-financiamiento-container button:focus {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+.info-text-financiamiento-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-text-financiamiento {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--asap);
+    font-weight: 400;
+    line-height: 22px;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 980px) {
+
+.financiamiento {
+    height: 950px;
+} 
+    
+    
+.info-financiamiento-container {
+    padding: 40px;
+    background-size: cover;
+    flex-direction: column;
+}
+
+
+.info-text-financiamiento {
+    font-size: 16px;
+    gap: 10px;
+}
+}
+
+@media screen and (max-width: 520px) {
+
+    .financiamiento {
+        height: 900px;
+    } 
+
+    .info-financi.financiamiento-container {
+        padding: 30px;
+    }
+
+    .info-text-financi.financiamiento {
+        font-size: 14px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+}
