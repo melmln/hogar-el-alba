@@ -1,12 +1,10 @@
-/* Falta arreglar detalles y vista mobile */
-
 .historia {
     background-image: url(../../../assets/img/nosotros/historia-hogar.png);
     background-color: var(--lightBlue);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 790px;
+    height: 750px;
     background-position-y: bottom;
 } 
 
@@ -91,7 +89,7 @@
 @media screen and (max-width: 980px) {
 
 .historia {
-    height: 950px;
+    height: 840px;
 } 
     
     
@@ -99,6 +97,8 @@
     padding: 40px;
     background-size: cover;
     flex-direction: column;
+    padding-bottom: 0;
+    gap: 20px;
 }
 
 
@@ -111,11 +111,14 @@
 @media screen and (max-width: 520px) {
 
     .historia {
-        height: 900px;
+        height: 770px;
     } 
 
     .info-historia-container {
-        padding: 30px;
+        padding: 10px;
+        gap: 20px;
+        padding-bottom: 0;
+
     }
 
     .info-text-historia {
@@ -125,4 +128,82 @@
     .nosotros-btn {
         font-size: 14px;
     }
+
+    
+.historia-wave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+    .historia {
+        height: 870px;
+    } 
+
+    .info-historia-container {
+        padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .info-text-historia {
+        font-size: 14px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .historia {
+        height: 930px;
+    } 
+
+    .info-historia-container {
+        padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .info-text-historia {
+        font-size: 14px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 344px) {
+    
+    .historia {
+        height: 900px;
+    } 
+
+    .info-historia-container {
+        padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .info-text-historia {
+        font-size: 12px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
 }
