@@ -106,21 +106,71 @@
 }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 450px) {
 
     .financiamiento {
-        height: 900px;
+        height: 870px;
     } 
 
-    .info-financi.financiamiento-container {
+    .info-financiamiento-container {
         padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
     }
 
-    .info-text-financi.financiamiento {
+    .info-text-financiamiento {
         font-size: 14px;
     }
 
     .nosotros-btn {
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .financiamiento {
+        height: 930px;
+    } 
+
+    .info-financiamiento-container {
+        padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .info-text-financiamiento {
+        font-size: 14px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 344px) {
+    
+    .financiamiento {
+        height: 900px;
+    } 
+
+    .info-financiamiento-container {
+        padding: 30px;
+        gap: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .info-text-financiamiento {
+        font-size: 12px;
+    }
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
 }
