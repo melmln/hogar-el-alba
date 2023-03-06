@@ -16,17 +16,7 @@
     z-index: 1;
 }
 
-.nosotros-btn {
-    padding: 20px 0;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    width: 230px;
-    text-align: start;
-    padding-left: 15px;
-    color: var(--white);
-    background-color: var(--blue);
-}
+
 
 .wcm-btn {
     padding: 20px 0;
@@ -69,7 +59,7 @@
     font-family: var(--asap);
     font-weight: 400;
     line-height: 22px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .wcm-img-container {
@@ -79,22 +69,26 @@
     right: 0;
 }
 
-/* -------- Falta acomodar vista mobile ----------*/
-
 
 @media screen and (max-width: 980px) {
- 
-.william-morris {
-    padding: 40px;
-    background-size: cover;
-    flex-direction: column;
-}
-
-
-.info-text-wcm {
-    font-size: 16px;
-    gap: 10px;
-}
+    
+    .william-morris {
+        padding: 40px;
+        background-size: cover;
+        flex-direction: column;
+    }
+    
+    
+    .info-text-wcm {
+        font-size: 16px;
+        gap: 30px;
+        padding-top: 30px;
+        width: 65%;
+    }
+    
+    .wcm-img-container {
+        top: 350px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -105,9 +99,24 @@
 
     .info-text-wcm {
         font-size: 14px;
+        width: 78%;
     }
-
+    
+    .wcm-bold {
+        width: 65%;
+    }
+    
     .nosotros-btn {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .info-text-wcm {
+        width: 100%;
+    }
+
+    .wcm-bold {
+       width: 65%;
     }
 }
