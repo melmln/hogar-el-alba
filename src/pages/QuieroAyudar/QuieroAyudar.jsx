@@ -1,10 +1,10 @@
 import './QuieroAyudar.css'
 /* assets */
-import quieroAyudarBanner from '../../assets/img/grupo-de-amigos-sentados-juntos.png'
-import waveUp from '../../assets/img/svg.png'
-import waveDown from '../../assets/img/svg-2.png'
-import qr from '../../assets/img/qr-code.png'
-import line from '../../assets/img/line.png'
+import quieroAyudarBanner from '../../assets/img/quiero-ayudar/grupo-de-amigos-sentados-juntos.png'
+import waveUp from '../../assets/img/quiero-ayudar/wave-top.png'
+import waveDown from '../../assets/img/quiero-ayudar/wave-bottom.png'
+import qr from '../../assets/img/quiero-ayudar/qr-code.png'
+import line from '../../assets/img/quiero-ayudar/line.png'
 
 const QuieroAyudar = () => {
   return (
