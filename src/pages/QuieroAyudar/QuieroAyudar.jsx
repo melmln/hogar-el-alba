@@ -42,7 +42,7 @@ const QuieroAyudar = () => {
             <li>CVU 0000003100034740171148</li>
             <li>Alias hogar.alba</li>
           </ul>
-          <p>
+          <p className='qr-section__last-p'>
             Una vez hecha la donación, por favor, enviar el comprobante a
             contable.elalba@gmail.com para su confirmación.
           </p>
