@@ -25,10 +25,8 @@ const Financiamiento = () => {
             
             <div className='info-text-financiamiento-container'>
                 <div className='info-text-financiamiento'>
-                  <p>El Hogar El Alba es una Asociación Civil fundada por William Case Morris y dedicada, desde 1925, a brindar un espacio de contención, crecimiento, abrigo y protección a niños, niñas y adolescentes con derechos vulnerados. </p>
-                  <p>A lo largo de su trayectoria, el hogar ha llevado adelante diferentes programas y proyectos en pos de la niñez desprotegida.</p>
-                  <p>Se realizaron alianzas y articulaciones con distintas instituciones como la fundación CDI (capacitación digital), fundación Banco de Alimentos, Universidad Nacional de Lomas de Zamora, Canford School, Sams y Latin Link. También participó en concursos y foros sobre temáticas relacionadas con la niñez y adolescencia.</p>
-                  <p>En el año 2008 fue reconocido con el premio “Juntos educar” otorgado por la vicaria episcopal de educación.</p>
+                  <p>El Hogar El Alba se sostiene con diversos recursos financieros. Desde hace más de 20 años, a través de convenios realizados con el Gobierno de la Provincia de Buenos Aires, el hogar recibe becas para el sostenimiento de los niños. Por otra parte, se llevan adelante microemprendimientos relacionados con actividades rurales y de campo, como producción y venta de quesos, miel y productos de panadería.</p>
+                  <p>Se realizan articulaciones con entidades que colaboran solidariamente con el hogar. Algunas de ellas nacionales, como el banco de alimentos, entidades religiosas, escuelas y organizaciones de la comunidad; otras extranjeras como escuelas e iglesias.</p>
                 </div>
             </div>
 

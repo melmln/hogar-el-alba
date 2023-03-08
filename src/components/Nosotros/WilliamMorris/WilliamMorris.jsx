@@ -1,7 +1,5 @@
 import './WilliamMorris.css'
 import { Link } from 'react-router-dom'
-/* assets */
-import wcm from '../../../assets/img/nosotros/william-c-morris.png'
 
 const WilliamMorris = () => {
   return (
@@ -20,6 +18,10 @@ const WilliamMorris = () => {
                   <button className="nosotros-btn">Cómo nos financiamos</button>
                 </Link>
             </div>
+
+            <div className="wcm-img-container">
+{/*                 <img src={wcm} alt="" className="wcm-img" />
+ */}            </div>
             
             <div className='info-text-wcm-container'>
                 <div className='info-text-wcm wcm-info'>
@@ -46,10 +48,6 @@ const WilliamMorris = () => {
                     </p>
 
                 </div>
-            </div>
-
-            <div className="wcm-img-container">
-                <img src={wcm} alt="" className="wcm-img" />
             </div>
        
     </main>

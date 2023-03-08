@@ -2,8 +2,10 @@ import './Home.css'
 /* assets */
 import whiteLine from '../../assets/img/home/white-line.png'
 import whiteLineLoop from '../../assets/img/home/white-line-loop.png'
-import whiteWave from '../../assets/img/home/white-wave-2.png'
-import yellowCard from '../../assets/img/home/yellow-card.png'
+import whiteWave from '../../assets/img/home/white-wave.png'
+import irregularHome from '../../assets/img/home/irregular-home.png'
+/* import whiteWaveMobile from '../../assets/img/home/white-wave.png'
+ */import yellowCard from '../../assets/img/home/yellow-card.png'
 import redCard from '../../assets/img/home/red-card.png'
 import blueCard from '../../assets/img/home/blue-card.png'
 import { Link } from 'react-router-dom'
@@ -15,7 +17,8 @@ const Home = () => {
         <div className="banner-container">
           <div className="white-wave-container">
             <img className="white-wave" src={whiteWave} alt='white-wave'/>
-          </div>
+{/*             <img className='white-wave-mb' src={whiteWaveMobile} alt='white-wave-mb'/>
+ */}          </div>
         </div>
         
                       {/* Cards */}

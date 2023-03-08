@@ -9,7 +9,7 @@ const Historia = () => {
             
             <div className="subcategories-historia-container">
                 <Link to='/nosotros'>
-                  <button className="nosotros-btn">Acerca de historia</button>
+                  <button className="nosotros-btn">Acerca de nosotros</button>
                 </Link>
                 <Link to='/william-morris'>
                   <button className="nosotros-btn">William C. Morris</button>

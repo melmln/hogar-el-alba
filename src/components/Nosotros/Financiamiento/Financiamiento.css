@@ -71,7 +71,9 @@
 
 .info-text-financiamiento-container {
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 20px;
+
 }
 
 .info-text-financiamiento {

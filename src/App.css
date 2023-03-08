@@ -15,8 +15,14 @@
     font-family: var(--asap);
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 html {
     height: 100vh;
+    background-color: var(--lightBlue);
 }
 
 a {

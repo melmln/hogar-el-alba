@@ -17,7 +17,6 @@
     left: 0;
     width: 100%;
 } 
-
 /* Cards */
 
 .home-cards-container {
@@ -102,6 +101,7 @@
     font-weight: 400;
     padding-top: 70px;
     padding-bottom: 80px;
+
 }
 
 .quote-line-container {

@@ -17,7 +17,6 @@
 }
 
 
-
 .wcm-btn {
     padding: 20px 0;
     border-radius: 10px;
@@ -43,7 +42,9 @@
 
 .info-text-wcm-container {
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 20px;
+
 }
 
 .wcm-bold {
@@ -52,7 +53,7 @@
 
 .info-text-wcm {
     display: flex;
-    width: 50%;
+    width: 57%;
     flex-direction: column;
     color: var(--white);
     font-size: 18px;
@@ -67,56 +68,74 @@
     position: absolute;
     top: 0;
     right: 0;
+    background-image: url(../../../assets/img/nosotros/william-c-morris.png);
+    height: 621px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
 @media screen and (max-width: 980px) {
     
     .william-morris {
-        padding: 40px;
+        padding: 0;
         background-size: cover;
         flex-direction: column;
     }
-    
+
+    .subcategories-wcm-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1;
+        position: relative;
+        padding: 40px;
+        padding-bottom: 0;
+    }
+
+    .info-text-wcm-container {
+        padding-top: 0;
+    }
     
     .info-text-wcm {
         font-size: 16px;
         gap: 30px;
-        padding-top: 30px;
-        width: 65%;
+        width: 100%;
+        padding: 40px;
+        padding-top: 0;
+
     }
     
     .wcm-img-container {
-        top: 350px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        background-image: url(../../../assets/img/nosotros/william-c-morris-mb-2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
+
 }
 
 @media screen and (max-width: 520px) {
-
     .william-morris {
-        padding: 30px;
+        gap: 0;
     }
 
     .info-text-wcm {
         font-size: 14px;
-        width: 78%;
-    }
-    
-    .wcm-bold {
-        width: 65%;
     }
     
     .nosotros-btn {
         font-size: 14px;
     }
-}
 
-@media screen and (max-width: 375px) {
-    .info-text-wcm {
+    .wcm-img-container{
         width: 100%;
-    }
-
-    .wcm-bold {
-       width: 65%;
+        background-image: url(../../../assets/img/nosotros/william-c-morris-mb.png);
     }
 }
+
+
