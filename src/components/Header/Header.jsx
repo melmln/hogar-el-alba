@@ -4,6 +4,7 @@ import { useState } from 'react';
 /* Assets */
 import logo from '../../../src/logo.png'
 import bm from '../../assets/img/bm.png'
+import headerBackground from '../../assets/img/bck-header.png'
 
 
 const Header = () => {
@@ -37,6 +38,9 @@ const Header = () => {
                        <img src={bm} alt="burguer-menu" />
                     </div>
             </nav>
+            <div className="background-header-container">
+              <img src={headerBackground} alt="background-header" />
+            </div>
         </header>
   )
 }
