@@ -20,10 +20,10 @@ main {
     margin: 0 auto;
 }
 
-html {
+/* html {
     height: 100vh;
     background-color: var(--lightBlue);
-}
+} */
 
 a {
     text-decoration: none;
