@@ -58,13 +58,13 @@ nav {
   line-height: 50px;
   font-family: 'Capriola', sans-serif;
 }
-
-.category:hover {
+ .category-active {
   border-radius: 10px;
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer;
-}
+} 
+
 
 .donate-btn {
   width: 160px;
