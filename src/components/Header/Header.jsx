@@ -18,12 +18,6 @@ const Header = () => {
     setBmOpen(!bmOpen)
   }
 
-  const [catActive, setCatActive] = useState(false)
-
-  const categoryActive = () => {
-    setCatActive(!catActive)
-  }
-
   const nosotrosIsActive =
     activeCategory === 'nosotros' ? 'category-active' : ''
   const proyectosIsActive =
@@ -43,31 +37,19 @@ const Header = () => {
         </div>
         <div className={`categories-container ${bmOpen && 'open'}`}>
           <ul className='categories'>
-            <li
-              className={`category ${nosotrosIsActive}`}
-              onClick={categoryActive}
-            >
+            <li className={`category ${nosotrosIsActive}`}>
               <Link to='/nosotros'>Nosotros</Link>
             </li>
 
-            <li
-              className={`category ${proyectosIsActive}`}
-              onClick={categoryActive}
-            >
+            <li className={`category ${proyectosIsActive}`}>
               <Link to='/proyectos'>Proyectos</Link>
             </li>
 
-            <li
-              className={`category ${serviciosIsActive}`}
-              onClick={categoryActive}
-            >
+            <li className={`category ${serviciosIsActive}`}>
               <Link to='/servicios'>Servicios</Link>
             </li>
 
-            <li
-              className={`category ${contactoIsActive}`}
-              onClick={categoryActive}
-            >
+            <li className={`category ${contactoIsActive}`}>
               <Link to='/contacto'>Contacto</Link>
             </li>
           </ul>
