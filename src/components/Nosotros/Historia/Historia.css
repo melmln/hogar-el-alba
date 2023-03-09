@@ -71,7 +71,7 @@
 
 .info-text-historia-container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 20px;
 
 }
@@ -91,7 +91,7 @@
 @media screen and (max-width: 980px) {
 
 .historia {
-    height: 840px;
+    height: 850px;
 } 
     
     
@@ -107,17 +107,18 @@
 .info-text-historia {
     font-size: 16px;
     gap: 10px;
+    padding-top: 0;
 }
 }
 
 @media screen and (max-width: 520px) {
 
     .historia {
-        height: 770px;
+        height: 870px;
     } 
 
     .info-historia-container {
-        padding: 10px;
+        padding:40px;
         gap: 20px;
         padding-bottom: 0;
 
@@ -144,7 +145,7 @@
 @media screen and (max-width: 450px) {
 
     .historia {
-        height: 870px;
+        height: 890px;
     } 
 
     .info-historia-container {

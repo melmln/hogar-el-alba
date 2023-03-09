@@ -1,11 +1,14 @@
+.home {
+    background-color: var(--white);
+}
+
 /* Hero */
 
 .banner-container {
     background-image: url(../../assets/img/home/home.png);
     background-repeat: no-repeat;
     background-size: cover;
-/*     background-position: center;
- */    background-position: bottom;
+    background-position: bottom;
     height: 750px;
     width: 100%;
     position: relative;
@@ -22,7 +25,7 @@
     display: none;
 }
 
-.irregular-home {
+.irregular-home-container {
     display: none;
 }
 /* Cards */
@@ -219,13 +222,20 @@
      height: fit-content;
      margin-top: 100px;
      background-color: var(--white);
+     margin-bottom: 0;
 }
 
 /* W.C.M quote */
+
+
 .quote-container {
     padding: 40px 0;
     margin-top: 47.3rem;
     position: relative;
+}
+
+.quote-line-container {
+    padding-top: 20px;
 }
 
 .white-wave-mb {
@@ -238,15 +248,21 @@
     display: none;
 }
 
+.irregular-home-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 }
 
 
-@media screen and (max-width: 614px) {
-    .irregular-home {
-        display: block;
-        position: absolute;
-        bottom: 350px;
-        left: 0;
+
+@media  screen and (max-width: 557px) {
+    .quote-container {
+        margin-top: 41rem;
+    
     }
 }
 
@@ -259,19 +275,25 @@
          padding: 0 20px;
          margin-top: 140px;
          gap: 0;
-
     }
+    
+        .white-wave-mb {
+            display: block;
+            position: absolute;
+            bottom: 20px;
+        }
+
     
     /* W.C.M quote */
     .quote-container {
-        margin-top: 41rem;
+        margin-top: 44rem;
     }
     
     .quote-line-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        gap: 5px;
+        gap: 0px;
         font-size: 14px;
     }
 
@@ -290,8 +312,9 @@
         max-width: 450px;
         padding:  0 35px;
     }   
-
-    
+    .line, .line-loop {
+        width: 63px;
+    }
 
     }
 
@@ -303,19 +326,27 @@
          padding: 0 35px;
          margin-top: 170px;
          gap: 0;
+         padding-bottom: 30px;
     }
 
     
     .white-wave-mb {
         display: block;
         position: absolute;
-        bottom: 50px;
+        bottom: 20px;
     }
     
     /* W.C.M quote */
     .quote-container {
-        margin-top: 33rem;
+        margin-top: 38rem;
+        padding-top: 0;
     }
+
+    
+    .line, .line-loop {
+        width: 50px;
+    }
+
     
     }
 

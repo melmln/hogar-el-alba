@@ -6,6 +6,7 @@
     background-position: center;
     height: 850px;
     background-position-y: bottom;
+
 } 
 
 .info-financiamiento-container {
@@ -71,7 +72,7 @@
 
 .info-text-financiamiento-container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 20px;
 
 }
@@ -91,11 +92,12 @@
 @media screen and (max-width: 980px) {
 
 .financiamiento {
-    height: 950px;
+    height: 900px;
 } 
-    
-    
+
+
 .info-financiamiento-container {
+    gap: 20px;
     padding: 40px;
     background-size: cover;
     flex-direction: column;
@@ -105,13 +107,14 @@
 .info-text-financiamiento {
     font-size: 16px;
     gap: 10px;
+
 }
 }
 
 @media screen and (max-width: 450px) {
 
     .financiamiento {
-        height: 870px;
+        height: 820px;
     } 
 
     .info-financiamiento-container {
@@ -133,7 +136,7 @@
 @media screen and (max-width: 375px) {
     
     .financiamiento {
-        height: 930px;
+        height: 800px;
     } 
 
     .info-financiamiento-container {
@@ -157,7 +160,7 @@
 @media screen and (max-width: 344px) {
     
     .financiamiento {
-        height: 900px;
+        height: 800px;
     } 
 
     .info-financiamiento-container {
