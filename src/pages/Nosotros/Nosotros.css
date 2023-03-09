@@ -90,7 +90,7 @@
 @media screen and (max-width: 980px) {
 
 .nosotros {
-    height: 950px;
+    height: 930px;
 } 
     
     
@@ -98,6 +98,7 @@
     padding: 40px;
     background-size: cover;
     flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -110,11 +111,13 @@
 @media screen and (max-width: 520px) {
 
     .nosotros {
-        height: 900px;
+        height: 860px;
     } 
 
     .info-nosotros-container {
-        padding: 30px;
+            gap: 0;
+            padding-bottom: 0;
+        
     }
 
     .info-text-nosotros {
@@ -123,5 +126,14 @@
 
     .nosotros-btn {
         font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    .nosotros {
+        height: 900px;
     }
 }
