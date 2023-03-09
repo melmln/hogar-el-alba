@@ -199,9 +199,6 @@ donate-btn:hover {
 
 
 .category:hover {
-  border-radius: 0;
-  background-color: var(--categoryHover);
-  color: var(--black);
   cursor: pointer;
 }
 
@@ -211,7 +208,6 @@ donate-btn:hover {
   font-size: 14px;
   margin-left: 25px;
 }
- 
 
 }
 
