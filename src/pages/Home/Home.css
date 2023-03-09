@@ -13,10 +13,18 @@
 
  .white-wave {
     position: absolute;
-    bottom: 0;
+    top: 490px;
     left: 0;
     width: 100%;
 } 
+
+.white-wave-mb {
+    display: none;
+}
+
+.irregular-home {
+    display: none;
+}
 /* Cards */
 
 .home-cards-container {
@@ -161,6 +169,13 @@
         border-radius: 8px;
     }
 
+    .white-wave {
+        position: absolute;
+        top: 545px;
+        left: 0;
+        width: 100%;
+    } 
+
     /* W.C.M quote */
     .quote-container {
         padding-top: 57px;
@@ -200,21 +215,40 @@
 
 .home-cards-container {
      flex-direction: column;
-     padding-bottom: 80px;
      padding-top: 0;
      height: fit-content;
      margin-top: 100px;
+     background-color: var(--white);
 }
 
 /* W.C.M quote */
 .quote-container {
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding: 40px 0;
     margin-top: 47.3rem;
+    position: relative;
+}
+
+.white-wave-mb {
+    display: block;
+    position: absolute;
+    bottom: 95px;
+}
+
+.white-wave {
+    display: none;
 }
 
 }
 
+
+@media screen and (max-width: 614px) {
+    .irregular-home {
+        display: block;
+        position: absolute;
+        bottom: 350px;
+        left: 0;
+    }
+}
 
 @media screen and (max-width: 520px) {
 
@@ -249,9 +283,6 @@
         font-size: 14px;
     }
 
-    .line, .line-loop {
-    }
-
     .quote-william-morris {
         margin-top: 30px;
         font-size: 16px;
@@ -259,6 +290,9 @@
         max-width: 450px;
         padding:  0 35px;
     }   
+
+    
+
     }
 
 @media screen and (max-width: 375px) {
@@ -269,6 +303,13 @@
          padding: 0 35px;
          margin-top: 170px;
          gap: 0;
+    }
+
+    
+    .white-wave-mb {
+        display: block;
+        position: absolute;
+        bottom: 50px;
     }
     
     /* W.C.M quote */
