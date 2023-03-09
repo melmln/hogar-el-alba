@@ -1,9 +1,13 @@
 import './Contacto.css'
 import locationMap from '../../assets/img/contacto/mapa-de-ubicacion.png'
+import { useContext } from 'react'
+import { CategoryContext } from '../../context/CategoryContext'
 
 const Contacto = () => {
+  const { changeCategory } = useContext(CategoryContext)
+
   return (
-    <main className='contact'>
+    <main className='contact' onLoad={() => changeCategory('contacto')}>
       <section className='contact-title'>
         <h1>Contactanos</h1>
         <h2>Escribinos para más información y visitanos en el hogar</h2>
@@ -37,7 +41,13 @@ const Contacto = () => {
             placeholder='Email'
             required
           />
-          <textarea name='mensaje' id='mensaje' cols='30' rows='10' placeholder='Mensaje'></textarea>
+          <textarea
+            name='mensaje'
+            id='mensaje'
+            cols='30'
+            rows='10'
+            placeholder='Mensaje'
+          ></textarea>
           <input type='submit' value='Enviar' />
         </form>
       </section>

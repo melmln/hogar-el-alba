@@ -1,4 +1,6 @@
 import './Proyectos.css'
+import { useContext } from 'react'
+import { CategoryContext } from '../../context/CategoryContext'
 import background from '../../assets/img/proyectos/pies-y-manos-de-bebe.png'
 import proyects from '../../utils/proyectos.json'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -8,7 +10,11 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
+
 const Proyectos = () => {
+
+  const { changeCategory } = useContext(CategoryContext)
+
   const params = {
     modules: [Pagination, Navigation, A11y, Autoplay],
     spaceBetween: 30,
@@ -41,7 +47,7 @@ const Proyectos = () => {
   }
 
   return (
-    <main className='proyectos'>
+    <main className='proyectos' onLoad={() => changeCategory('proyectos')}>
       <section>
         <img src={background} alt='Proyecto Amparo - Hogar El Alba' />
       </section>

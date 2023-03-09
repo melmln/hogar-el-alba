@@ -12,26 +12,27 @@ import QuieroAyudar from './pages/QuieroAyudar/QuieroAyudar'
 import WilliamMorris from './components/Nosotros/WilliamMorris/WilliamMorris'
 import Historia from './components/Nosotros/Historia/Historia'
 import Financiamiento from './components/Nosotros/Financiamiento/Financiamiento'
+// Context
+import { CategoryProvider } from './context/CategoryContext'
 
 function App() {
-
   return (
-    <>
-       <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/nosotros' element={<Nosotros/>} />
-          <Route path='/proyectos' element={<Proyectos />} />
-          <Route path='/servicios' element={<Servicios/>} />
-          <Route path='/contacto' element={<Contacto/>} />
-          <Route path='/quiero-ayudar' element={<QuieroAyudar/>} />
-          <Route path='/william-morris' element={<WilliamMorris/>}/>
-          <Route path='/historia' element={<Historia/>}/>
-          <Route path='/financiamiento' element={<Financiamiento/>}/>
-          <Route path='*' element={<h1>404 - Not Found</h1>} />
-        </Routes>
+    <CategoryProvider>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/nosotros' element={<Nosotros />} />
+        <Route path='/proyectos' element={<Proyectos />} />
+        <Route path='/servicios' element={<Servicios />} />
+        <Route path='/contacto' element={<Contacto />} />
+        <Route path='/quiero-ayudar' element={<QuieroAyudar />} />
+        <Route path='/william-morris' element={<WilliamMorris />} />
+        <Route path='/historia' element={<Historia />} />
+        <Route path='/financiamiento' element={<Financiamiento />} />
+        <Route path='*' element={<h1>404 - Not Found</h1>} />
+      </Routes>
       <Footer />
-    </>
+    </CategoryProvider>
   )
 }
 
