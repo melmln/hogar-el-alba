@@ -4,7 +4,7 @@ import { useState } from 'react';
 /* Assets */
 import logo from '../../../src/logo.png'
 import bm from '../../assets/img/bm.png'
-import headerBackground from '../../assets/img/bck-header.png'
+import headerBackground from '../../assets/img/background-header.png'
 
 
 const Header = () => {
