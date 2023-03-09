@@ -61,6 +61,16 @@ footer {
     display: none;
   }
 
+  .footer a.footer-address {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .footer{
+    min-height: initial;
+    padding: 40px 0 ;
+  }
+
   .footer .flex {
     width: 100%;
     justify-content: center;
@@ -74,12 +84,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 20px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       'footer__phone footer__email footer__instagram footer__facebook'
-      '. footer__address footer__address .'
-      '. footer__google footer__google .';
+      'footer__address footer__address footer__address footer__address'
+      'footer__google footer__google footer__google footer__google';
   }
 
   .footer__phone {

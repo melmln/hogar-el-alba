@@ -12,6 +12,7 @@
   line-height: 86px;
   margin-top: 40px;
   padding: 0 0 0 50px;
+  background-size: cover;
 }
 
 .background-section {
@@ -37,6 +38,10 @@
 
 .waves {
   width: 100%;
+}
+
+.wave-2 {
+  margin-top: -2px;
 }
 
 .qr-section {
@@ -182,7 +187,7 @@
     min-height: 70vh;
   }
 
-  .donation-section__info h5{
+  .donation-section__info h5 {
     margin: 0 1.5em;
   }
 
@@ -211,7 +216,7 @@
 }
 
 @media (max-width: 576px) {
-  .quiero-ayudar h1{
+  .quiero-ayudar h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +226,54 @@
     padding: 0;
   }
 
-  .donation-section__info ul{
+  .donation-section__info ul {
     line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiero-ayudar h1 {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+
+  .qr-section,
+  .qr-section__info p:first-child,
+  .qr-section__info h3,
+  .qr-section__info li,
+  .qr-section__last-p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .qr-section__info h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .qr-section__last-p {
+    text-decoration: underline;
+  }
+
+  .qr-section__code h3 {
+    font-family: 'Capriola';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  .donation-section__info ul {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 0;
+    margin: 50px;
+  }
+
+  .donation-section__info li {
+    margin: 0 0 10px 0;
   }
 }

@@ -79,3 +79,16 @@ div.swiper-button-next, div.swiper-button-prev {
   color: #fff;
   text-shadow: 0 1px 7px #000;
 }
+
+@media screen and (max-width: 480px) {
+  .proyectos h1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0 -35px 0;
+  }
+
+  .proyectos h1::after {
+    border-bottom: 2px solid black;
+    width: 100px;
+  }
+}

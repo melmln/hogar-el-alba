@@ -30,7 +30,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className='footer__address'>
-            <Link to='https://goo.gl/maps/SUCCmmwMF9VKa8XP8' target='_blank' className='flex'>
+            <Link to='https://goo.gl/maps/SUCCmmwMF9VKa8XP8' target='_blank' className='flex footer-address'>
               <img className='footer-icon' src={mapIcon} alt='Map Icon' />
               <p>Juan B. Justo 803, Longchamps, Buenos Aires, Argentina.</p>
             </Link>
