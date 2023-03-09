@@ -145,11 +145,11 @@
 @media screen and (max-width: 450px) {
 
     .historia {
-        height: 890px;
+        height: 960px;
     } 
 
     .info-historia-container {
-        padding: 30px;
+        padding: 40px;
         gap: 20px;
         padding-bottom: 0;
 
