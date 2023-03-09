@@ -57,8 +57,11 @@ const Home = () => {
         </div>
                  {/* Frase William Morris */}
           <div className="quote-container">
-{/*           <img className='irregular-home' src={irregularHome} alt='irregular-home'/>
- */}
+
+            <div className="irregular-home-container">
+                <img src={irregularHome} alt="" />
+            </div>
+
             <div className="quote-line-container">
                 <img className='line'
                 src={whiteLine} alt="line" />

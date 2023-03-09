@@ -42,7 +42,7 @@
 
 .info-text-wcm-container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 20px;
 
 }
