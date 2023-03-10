@@ -14,6 +14,7 @@ import aireLibre from '../../assets/img/servicios/aire-libre.png'
 import campamento from '../../assets/img/servicios/campamento.png'
 
 const Servicios = () => {
+
   return (
     <main className="servicios">
             <h1 className='servicios-title'>Servicios que ofrecemos</h1>
@@ -23,7 +24,9 @@ const Servicios = () => {
 
                     <div className="card-image-container">
                         <div className="image-container">
-                          <img src={zonaCarpas} alt="zona-de-carpas" />
+                          <img src={zonaCarpas} alt="zona-de-carpas" 
+                          
+                          />
                         </div>
                         <div className="caption">Zona de carpas</div>
                     </div>
