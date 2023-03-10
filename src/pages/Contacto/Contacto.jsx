@@ -1,5 +1,4 @@
 import './Contacto.css'
-import locationMap from '../../assets/img/contacto/mapa-de-ubicacion.png'
 import { useContext } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
 
@@ -13,7 +12,14 @@ const Contacto = () => {
         <h2>Escribinos para más información y visitanos en el hogar</h2>
       </section>
       <section>
-        <img src={locationMap} alt='Mapa de locación de Hogar El Alba' />
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.3736491407026!2d-58.360588848070016!3d-34.85813831160454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ac2e898d52d%3A0x6f816b01b7294e71!2sHogar%20%22El%20Alba%22!5e0!3m2!1ses-419!2sar!4v1678406714914!5m2!1ses-419!2sar'
+          style={{ border: 0, width: '100%', height: '550px' }}
+          allowfullscreen=''
+          loading='lazy'
+          referrerpolicy='no-referrer-when-downgrade'
+          title='Mapa de locación de Hogar El Alba'
+        />
       </section>
       <section className='form-section'>
         <form action='' method=''>
