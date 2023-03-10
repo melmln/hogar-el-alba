@@ -114,7 +114,7 @@
 @media screen and (max-width: 520px) {
 
     .historia {
-        height: 870px;
+        height: 880px;
     } 
 
     .info-historia-container {
@@ -142,10 +142,10 @@
 }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 454px) {
 
     .historia {
-        height: 960px;
+        height: 928px;
     } 
 
     .info-historia-container {
@@ -164,10 +164,19 @@
     }
 }
 
+
+@media screen and (max-width: 400px) {
+    
+    .historia {
+        height: 970px;
+    } 
+
+}
+
 @media screen and (max-width: 375px) {
     
     .historia {
-        height: 930px;
+        height: 955px;
     } 
 
     .info-historia-container {
