@@ -35,6 +35,12 @@
     position: relative;
   }
 
+  .card-image-container:hover {
+    transform: scale(1.05);
+    transition: ease 0.7s;
+    z-index: 3;
+  }
+
   .image-container {
     width: 100%;
   }
@@ -44,6 +50,7 @@
     width: 100%;
     height: auto;
   }
+
 
   .caption {
     display: flex;
@@ -90,6 +97,10 @@
 
       .gallery-images {
           grid-template-columns: 1fr;
+        }
+
+        .card-image-container:hover {
+          transform: scale(1);
         }
 
         .caption {

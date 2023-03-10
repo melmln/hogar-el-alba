@@ -177,15 +177,16 @@ donate-btn:hover {
     width: 100%;
   }
 
-  .category a {
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-    padding-left: 30px;
-    text-align: start;
-    line-height: 50px;
-    font-family: 'Capriola', sans-serif;
-  }
+.category a {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  padding-left: 30px;
+  text-align: start;
+  line-height: 50px;
+  font-family: 'Capriola', sans-serif;
+}
+
 
   .category:hover {
     border-radius: 0;
@@ -193,6 +194,9 @@ donate-btn:hover {
     color: var(--black);
     cursor: pointer;
   }
+.category:hover {
+  cursor: pointer;
+}
 
   .donate-btn {
     width: 143px;
@@ -200,4 +204,11 @@ donate-btn:hover {
     font-size: 14px;
     margin-left: 25px;
   }
+.donate-btn {
+  width: 143px;
+  height: 41px;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
 }
