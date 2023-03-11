@@ -10,14 +10,15 @@ const Modal = ({estado, cambiarEstado}) => { /* paso como props el estado y su a
             <div className="modal-container">
                 <button 
                 className="close-modal"
-                onClick={() => cambiarEstado(false)} /* Cambia el estado a falso para cerrar el modal */
+                onClick={
+                  () => cambiarEstado(false) /* Cambia el estado a falso para cerrar el modal */
+                } 
                 >X</button>
                 <div className="modal-img-container">
-                    <img src={campamento} alt="" className="img-modal" />
+                <img src={campamento} alt="img-modal" className="img-modal" />
                 </div>
             </div>
         </div>
-
     }
     </>
   )

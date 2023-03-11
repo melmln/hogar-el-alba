@@ -1,6 +1,8 @@
 import './Servicios.css'
 import { useContext, useState } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
+/* componentes */
+import Modal from '../../components/Modal/Modal'
 /* imágenes */
 import zonaCarpas from '../../assets/img/servicios/zona-carpas.png'
 import eventosRecreativos from '../../assets/img/servicios/eventos-recreativos.png'
@@ -21,8 +23,17 @@ import galería from '../../utils/galería.json'
 const Servicios = () => {
   const { changeCategory } = useContext(CategoryContext)
 
+  /* Modal */
+  const [modalState, setModalState] = useState(false);
+
   return (
     <main className='servicios' onLoad={() => changeCategory('servicios')}>
+
+      <Modal 
+      estado = {modalState}
+      cambiarEstado = {setModalState}
+      />
+
       <h1 className='servicios-title'>Servicios que ofrecemos</h1>
 
       <div className='gallery-container'>
@@ -30,7 +41,11 @@ const Servicios = () => {
           {
             galería.map((images) => {
               return (
-              <div key={images.id} className='card-image-container'>
+              <div 
+              key={images.id} 
+              className='card-image-container'
+              onClick={() => setModalState(!modalState)}
+              >
                 <div className='image-container'>
                   <img src={require(`../../assets/img/servicios/${images.img}`)} alt={images.title} />
                 </div>
