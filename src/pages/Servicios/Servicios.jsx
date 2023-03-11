@@ -1,5 +1,5 @@
 import './Servicios.css'
-import { useContext, useState } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
 /* componentes */
 import Modal from '../../components/Modal/Modal'
@@ -25,14 +25,18 @@ const Servicios = () => {
 
   /* Modal */
   const [modalState, setModalState] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null); // Estado de la imagen seleccionada
 
   return (
     <main className='servicios' onLoad={() => changeCategory('servicios')}>
-
-      <Modal 
-      estado = {modalState}
-      cambiarEstado = {setModalState}
-      />
+     
+      {selectedImage &&
+          <Modal 
+          estado = {modalState}
+          cambiarEstado = {setModalState}
+          images = {selectedImage} // Imágen seleccionada actual
+          />
+      }
 
       <h1 className='servicios-title'>Servicios que ofrecemos</h1>
 
@@ -42,9 +46,14 @@ const Servicios = () => {
             galería.map((images) => {
               return (
               <div 
-              key={images.id} 
               className='card-image-container'
-              onClick={() => setModalState(!modalState)}
+              key={images.id} 
+              onClick={() => 
+                {
+                  setModalState(!modalState);
+                  setSelectedImage(images); // Se actualiza el estado de la imagen seleccionad porque recibe el parametro del mapeo de cada img
+                }
+            }
               >
                 <div className='image-container'>
                   <img src={require(`../../assets/img/servicios/${images.img}`)} alt={images.title} />

@@ -1,7 +1,11 @@
 import './Modal.css';
-import campamento from '../../assets/img/servicios/campamento.png'
+import galería from '../../utils/galería.json'
+import { useState } from 'react';
 
-const Modal = ({estado, cambiarEstado}) => { /* paso como props el estado y su actualización */
+const Modal = ({estado, cambiarEstado, images}) => { /* paso como props el estado y su actualización */
+
+const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <>  
     { estado &&  /* si hay un estado true me renderiza el modal */
@@ -15,7 +19,11 @@ const Modal = ({estado, cambiarEstado}) => { /* paso como props el estado y su a
                 } 
                 >X</button>
                 <div className="modal-img-container">
-                <img src={campamento} alt="img-modal" className="img-modal" />
+                       <img 
+                       src={require(`../../assets/img/servicios/${images.img}`)} 
+                       alt="img-modal" 
+                       className="img-modal"
+                       key={images.id} />
                 </div>
             </div>
         </div>
