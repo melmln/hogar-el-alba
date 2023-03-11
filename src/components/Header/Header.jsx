@@ -4,15 +4,10 @@ import { useState } from 'react'
 /* Assets */
 import logo from '../../../src/logo.png'
 import bm from '../../assets/img/bm.png'
-<<<<<<< HEAD
-import headerBackground from '../../assets/img/background-header.png'
-
-=======
 import headerBackground from '../../assets/img/bck-header.png'
 // Context
 import { useContext } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
->>>>>>> development
 
 const Header = () => {
   const { activeCategory } = useContext(CategoryContext)
