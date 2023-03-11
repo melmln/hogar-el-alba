@@ -12,11 +12,13 @@ import plaza from '../../assets/img/servicios/plaza.png'
 import pileta from '../../assets/img/servicios/pileta.png'
 import aireLibre from '../../assets/img/servicios/aire-libre.png'
 import campamento from '../../assets/img/servicios/campamento.png'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
 
 const Servicios = () => {
   const { changeCategory } = useContext(CategoryContext)
+
+            
 
   return (
     <main className='servicios' onLoad={() => changeCategory('servicios')}>
