@@ -112,6 +112,10 @@
             align-items: center;
             padding-bottom: 0;
           }
+
+          .modal-servicios-container {
+            display: none;
+          }
         
     }
   @media screen and (max-width: 375px) {

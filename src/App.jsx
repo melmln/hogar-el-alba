@@ -15,14 +15,7 @@ import Financiamiento from './components/Nosotros/Financiamiento/Financiamiento'
 // Context
 import { CategoryProvider } from './context/CategoryContext'
 
-/* import Modal from './components/Modal/Modal'
-import { useState } from 'react' */
-
 function App() {
-
-      /* Modal */
-/*       const [modalState, setModalState] = useState(false);
- */
   return (
     <CategoryProvider>
        <Header />
@@ -39,14 +32,6 @@ function App() {
           <Route path='*' element={<h1>404 - Not Found</h1>} />
         </Routes>
       <Footer /> 
-     
-     
-     {/*  <Modal 
-      estado = {modalState}
-      cambiarEstado = {setModalState}
-      /> 
-      <div onClick={() => setModalState(!modalState)}>Hola</div>
- */}
     </CategoryProvider>
   )
 }

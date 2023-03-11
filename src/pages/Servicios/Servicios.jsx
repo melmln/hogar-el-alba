@@ -30,7 +30,8 @@ const Servicios = () => {
   return (
     <main className='servicios' onLoad={() => changeCategory('servicios')}>
      
-      {selectedImage &&
+     <div className="modal-servicios-container">
+     {selectedImage &&
           <Modal 
           estado = {modalState}
           cambiarEstado = {setModalState}
@@ -38,6 +39,7 @@ const Servicios = () => {
           />
       }
 
+      </div>container
       <h1 className='servicios-title'>Servicios que ofrecemos</h1>
 
       <div className='gallery-container'>
