@@ -114,7 +114,7 @@
 @media screen and (max-width: 450px) {
 
     .financiamiento {
-        height: 820px;
+        height: 850px;
     } 
 
     .info-financiamiento-container {
@@ -133,10 +133,18 @@
     }
 }
 
+@media screen and (max-width: 414px) {
+
+    .financiamiento {
+        height: 870px;
+    }
+}
+
+
 @media screen and (max-width: 375px) {
     
     .financiamiento {
-        height: 800px;
+        height: 860px;
     } 
 
     .info-financiamiento-container {

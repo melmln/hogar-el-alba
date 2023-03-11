@@ -1,12 +1,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  width: 100%;  
+  width: 100%;
   flex-direction: column;
-
 }
-
-
 
 nav {
   display: flex;
@@ -16,11 +13,11 @@ nav {
   padding: 0 50px;
 }
 
-.active {
-    border-radius: 10px;
-    background-color: var(--blue);
-    color: var(--white);
-    cursor: pointer;
+.category-active {
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
 }
 .background-header-container {
   position: relative;
@@ -102,17 +99,14 @@ donate-btn:hover {
   display: none;
 }
 
-
 @media screen and (max-width: 980px) {
-  
   header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: var(--white);
-
   }
-  
+
   nav {
     display: flex;
     align-items: center;
@@ -122,7 +116,6 @@ donate-btn:hover {
     background-color: var(--white);
     padding: 0 50px;
     flex-direction: row-reverse;
-
   }
 
   .active {
@@ -130,16 +123,14 @@ donate-btn:hover {
     background-color: var(--categoryHover);
     color: var(--black);
     cursor: pointer;
-  
-}
+  }
 
-  
   .logo-container {
     display: flex;
     justify-content: flex-end;
     width: 100%;
   }
-  
+
   .logo {
     width: 94px;
   }
@@ -152,40 +143,39 @@ donate-btn:hover {
     cursor: pointer;
   }
 
-.categories-container {
-  display: flex;
-  align-items: flex-start;
-  padding-top: 86px;
-  position: absolute;
-  z-index: 3;
-  top: 55px;
-  left: 0;
-  bottom: 0;
-  height: 100vh;
-  flex-direction: column;
-  background-color: var(--white);
-  width: 212px;
-  transform: translateX(-100%); /* oculto */
-  transition: 0.3s ease all;
-}
+  .categories-container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 86px;
+    position: absolute;
+    z-index: 3;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 212px;
+    transform: translateX(-100%); /* oculto */
+    transition: 0.3s ease all;
+  }
 
-.categories-container.open {
-  transform: translateX(0) !important;
-}
+  .categories-container.open {
+    transform: translateX(0) !important;
+  }
 
-.categories {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  color: var(--black);
-  font-size: 16px;
-  flex-direction: column;
+  .categories {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    color: var(--black);
+    font-size: 16px;
+    flex-direction: column;
+  }
 
-}
-
-.category {
-  width: 100%;
-}
+  .category {
+    width: 100%;
+  }
 
 .category a {
   width: 100%;
@@ -198,10 +188,22 @@ donate-btn:hover {
 }
 
 
+  .category:hover {
+    border-radius: 0;
+    background-color: var(--categoryHover);
+    color: var(--black);
+    cursor: pointer;
+  }
 .category:hover {
   cursor: pointer;
 }
 
+  .donate-btn {
+    width: 143px;
+    height: 41px;
+    font-size: 14px;
+    margin-left: 25px;
+  }
 .donate-btn {
   width: 143px;
   height: 41px;
@@ -210,4 +212,3 @@ donate-btn:hover {
 }
 
 }
-

@@ -12,26 +12,42 @@ import QuieroAyudar from './pages/QuieroAyudar/QuieroAyudar'
 import WilliamMorris from './components/Nosotros/WilliamMorris/WilliamMorris'
 import Historia from './components/Nosotros/Historia/Historia'
 import Financiamiento from './components/Nosotros/Financiamiento/Financiamiento'
+// Context
+import { CategoryProvider } from './context/CategoryContext'
+
+/* import Modal from './components/Modal/Modal'
+import { useState } from 'react' */
 
 function App() {
 
+      /* Modal */
+/*       const [modalState, setModalState] = useState(false);
+ */
   return (
-    <>
+    <CategoryProvider>
        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/nosotros' element={<Nosotros/>} />
+          <Route path='/nosotros' element={<Nosotros />} />
           <Route path='/proyectos' element={<Proyectos />} />
-          <Route path='/servicios' element={<Servicios/>} />
-          <Route path='/contacto' element={<Contacto/>} />
-          <Route path='/quiero-ayudar' element={<QuieroAyudar/>} />
-          <Route path='/william-morris' element={<WilliamMorris/>}/>
-          <Route path='/historia' element={<Historia/>}/>
-          <Route path='/financiamiento' element={<Financiamiento/>}/>
+          <Route path='/servicios' element={<Servicios />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/quiero-ayudar' element={<QuieroAyudar />} />
+          <Route path='/william-morris' element={<WilliamMorris />} />
+          <Route path='/historia' element={<Historia />} />
+          <Route path='/financiamiento' element={<Financiamiento />} />
           <Route path='*' element={<h1>404 - Not Found</h1>} />
         </Routes>
-      <Footer />
-    </>
+      <Footer /> 
+     
+     
+     {/*  <Modal 
+      estado = {modalState}
+      cambiarEstado = {setModalState}
+      /> 
+      <div onClick={() => setModalState(!modalState)}>Hola</div>
+ */}
+    </CategoryProvider>
   )
 }
 
