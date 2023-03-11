@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": "Zona de carpas",
+        "img": "zona-carpas.png"
+    },
+    
+    {
+        "id": "2",
+        "title": "Eventos recreativos",        
+        "img": "eventos-recreativos.png"
+    },
+    
+    {
+        "id": "3",
+        "title": "Eventos deportivos",        
+        "img": "deportivos.png"
+    },
+    
+    {
+        "id": "4",
+        "title": "Eventos empresariales",        
+        "img": "empresariales.png"
+    },
+    
+    {
+        "id": "5",
+        "title": "Eventos sociales",        
+        "img": "sociales.png"
+    },
+    
+    {
+        "id": "6",
+        "title": "Gimnasio",         
+        "img": "gimnasio.png"
+    },
+    
+    {
+        "id": "7",
+        "title": "Zona de picnic",          
+        "img": "zona-picnic.png"
+    },
+    
+    {
+        "id": "8",
+        "title": "Quincho",        
+        "img": "quincho.png"
+    },
+    
+    {
+        "id": "9",
+        "title": "Plaza de juegos",        
+        "img": "plaza.png"
+    },
+    
+    {
+        "id": "10",
+        "title": "Pileta",
+        "img": "pileta.png"
+    },
+    
+    {
+        "id": "11",
+        "title": "Eventos al aire libre",
+        "img": "aire-libre.png"
+    },
+    
+    {
+        "id": "12",
+        "title": "Campamento Holanda",
+        "img": "campamento.png"
+    }
+    
+]
