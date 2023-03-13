@@ -1,9 +1,11 @@
 import './App.css'
-/* Components */
+import { Route, Routes } from 'react-router-dom'
+// context
+import { CategoryProvider } from './context/CategoryContext'
+/* componentes */
 import Header from '../src/components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
-import { Route, Routes } from 'react-router-dom'
 import Proyectos from './pages/Proyectos/Proyectos'
 import Nosotros from './pages/Nosotros/Nosotros'
 import Servicios from './pages/Servicios/Servicios'
@@ -12,8 +14,6 @@ import QuieroAyudar from './pages/QuieroAyudar/QuieroAyudar'
 import WilliamMorris from './components/Nosotros/WilliamMorris/WilliamMorris'
 import Historia from './components/Nosotros/Historia/Historia'
 import Financiamiento from './components/Nosotros/Financiamiento/Financiamiento'
-// Context
-import { CategoryProvider } from './context/CategoryContext'
 
 function App() {
   return (
@@ -36,4 +36,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

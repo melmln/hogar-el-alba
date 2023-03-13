@@ -1,3 +1,5 @@
+/* Background */
+
 .historia {
     background-image: url(../../../assets/img/nosotros/historia-hogar.png);
     background-color: var(--lightBlue);
@@ -8,25 +10,7 @@
     background-position-y: bottom;
 } 
 
-.info-historia-container {
-    display: flex;
-    gap: 50px;
-    background-color: var(--lightBlue);
-    padding: 83px;
-    padding-bottom: 30px;
-    width: 100%;
-}
-
-.historia-wave-container {
-    position: relative;
-}
-
-.historia-wave {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+/* Subacategories */
 
 .subcategories-historia-container {
     display: flex;
@@ -69,11 +53,21 @@
     color: var(--red);
 }
 
+/* Info */
+
+.info-historia-container {
+    display: flex;
+    gap: 50px;
+    background-color: var(--lightBlue);
+    padding: 83px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
 .info-text-historia-container {
     display: flex;
     align-items: flex-start;
     padding-top: 20px;
-
 }
 
 .info-text-historia {
@@ -87,66 +81,99 @@
     gap: 20px;
 }
 
+/* Wave */
+
+.historia-wave-container {
+    position: relative;
+}
+
+.historia-wave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ------- Media queries ---------- */
 
 @media screen and (max-width: 980px) {
 
-.historia {
-    height: 850px;
-} 
-    
-    
-.info-historia-container {
-    padding: 40px;
-    background-size: cover;
-    flex-direction: column;
-    padding-bottom: 0;
-    gap: 20px;
-}
+    /* Background */
+
+    .historia {
+        height: 850px;
+    } 
+
+    /* Info */
+        
+    .info-historia-container {
+        padding: 40px;
+        background-size: cover;
+        flex-direction: column;
+        padding-bottom: 0;
+        gap: 20px;
+    }
 
 
-.info-text-historia {
-    font-size: 16px;
-    gap: 10px;
-    padding-top: 0;
-}
+    .info-text-historia {
+        font-size: 16px;
+        gap: 10px;
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
+
+    /* Background */
 
     .historia {
         height: 880px;
     } 
 
+    /* Subcategories */
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+    /* Info */
+
     .info-historia-container {
         padding:40px;
         gap: 20px;
         padding-bottom: 0;
-
     }
 
     .info-text-historia {
         font-size: 14px;
     }
 
-    .nosotros-btn {
-        font-size: 14px;
-    }
-
+    /* Wave */
     
-.historia-wave {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: 10px;
-}
+    .historia-wave {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 454px) {
 
+    /* Background */
+
     .historia {
         height: 928px;
     } 
+
+    /* Subcategories */
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+    /* Info */
 
     .info-historia-container {
         padding: 40px;
@@ -159,14 +186,13 @@
         font-size: 14px;
     }
 
-    .nosotros-btn {
-        font-size: 14px;
-    }
 }
 
 
 @media screen and (max-width: 400px) {
     
+    /* Background */
+
     .historia {
         height: 970px;
     } 
@@ -175,9 +201,19 @@
 
 @media screen and (max-width: 375px) {
     
+    /* Background */
+
     .historia {
         height: 955px;
     } 
+
+    /* Subactegories */
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+    /* Info */
 
     .info-historia-container {
         padding: 30px;
@@ -190,18 +226,25 @@
         font-size: 14px;
     }
 
-    .nosotros-btn {
-        font-size: 14px;
-    }
 
 }
 
 
 @media screen and (max-width: 344px) {
-    
+
+    /* Background */
+
     .historia {
         height: 900px;
     } 
+
+    /* Subcategories */
+
+    .nosotros-btn {
+        font-size: 14px;
+    }
+
+    /* Info */
 
     .info-historia-container {
         padding: 30px;
@@ -214,8 +257,7 @@
         font-size: 12px;
     }
 
-    .nosotros-btn {
-        font-size: 14px;
-    }
 
 }
+
+/* -------- End media queries -------- */

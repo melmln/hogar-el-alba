@@ -16,7 +16,6 @@
     z-index: 1;
 }
 
-
 .wcm-btn {
     padding: 20px 0;
     border-radius: 10px;
@@ -75,14 +74,13 @@
     background-size: contain;
 }
 
+/*--------- Media queries -----------*/
 
 @media screen and (max-width: 1185px) {
     .info-text-wcm-container {
         width: 66%;
     }
-
 }
-
 
 @media screen and (max-width: 980px) {
     
@@ -157,5 +155,7 @@
         background-image: url(../../../assets/img/nosotros/william-c-morris-mb.png);
     }
 }
+
+/*--------- En media queries ---------*/
 
 

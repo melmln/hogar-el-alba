@@ -1,3 +1,5 @@
+ /* Background */
+ 
  .nosotros {
     background-image: url(../../assets/img/nosotros/acerca-de-nosotros.png);
     background-color: var(--lightBlue);
@@ -8,6 +10,8 @@
     background-position-y: bottom;
 } 
 
+/* Subcategories */
+
 .info-nosotros-container {
     display: flex;
     gap: 50px;
@@ -15,17 +19,6 @@
     padding: 83px;
     padding-bottom: 30px;
     width: 100%;
-}
-
-.acerca-nosotros-wave-container {
-    position: relative;
-}
-
-.acerca-nosotros-wave {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .subcategories-nosotros-container {
@@ -69,6 +62,22 @@
     color: var(--red);
 }
 
+
+/* Wave */
+
+.acerca-nosotros-wave-container {
+    position: relative;
+}
+
+.acerca-nosotros-wave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Info */
+
 .info-text-nosotros-container {
     display: flex;
     align-items: flex-start;
@@ -86,6 +95,7 @@
     gap: 20px;
 }
 
+/* ------- Media queries ------- */
 
 @media screen and (max-width: 980px) {
 
@@ -110,27 +120,34 @@
 
 @media screen and (max-width: 520px) {
 
+    /* Background */
+
     .nosotros {
         height: 840px;
     } 
 
-    .info-nosotros-container {
-            gap: 0;
-            padding-bottom: 0;
-        
-    }
-
-    .info-text-nosotros {
-        font-size: 14px;
-    }
+    /* Subcategories */
 
     .nosotros-btn {
         font-size: 14px;
     }
 
+    /* Info */
+
+    .info-nosotros-container {
+        gap: 0;
+        padding-bottom: 0;
+    }
+
+    .info-text-nosotros {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 421px) {
+
+    /* Background */
+
     .nosotros {
         height: 925px;
     }
@@ -138,7 +155,11 @@
 
 @media screen and (max-width: 375px) {
     
+    /* Background */
+
     .nosotros {
         height: 950px;
     }
 }
+
+/* ---------- End mediaqueries --------- */

@@ -3,26 +3,34 @@ import { Link } from 'react-router-dom'
 
 const WilliamMorris = () => {
   return (
-    <main className="william-morris">            
+    <main className="william-morris">     
+
+            {/* Subcategories */}       
+
             <div className="subcategories-wcm-container">
                 <Link to='/nosotros'>
                   <button className="nosotros-btn">Acerca de nosotros</button>
                 </Link>
+
                 <Link to='/william-morris'>
                   <button className="wcm-btn">William C. Morris</button>
                 </Link>
+
                 <Link to='/historia'>
                   <button className="nosotros-btn">Historia del hogar</button>
                 </Link>
+
                 <Link to='/financiamiento'>
                   <button className="nosotros-btn">Cómo nos financiamos</button>
                 </Link>
             </div>
 
             <div className="wcm-img-container">
-{/*                 <img src={wcm} alt="" className="wcm-img" />
- */}            </div>
+
+          </div>
             
+                  {/* Información */}
+
             <div className='info-text-wcm-container'>
                 <div className='info-text-wcm wcm-info'>
                     <span className="wcm-bold">

@@ -28,6 +28,7 @@
 .irregular-home-container {
     display: none;
 }
+
 /* Cards */
 
 .home-cards-container {
@@ -101,6 +102,7 @@
 }
 
 /* W.C.M quote */
+
 .quote-container {
     display: flex;
     justify-content: center;
@@ -112,7 +114,6 @@
     font-weight: 400;
     padding-top: 70px;
     padding-bottom: 80px;
-
 }
 
 .quote-line-container {
@@ -148,10 +149,13 @@
 
 }
 
-/* Media queries */
+/*--------- Media queries -----------*/
 
 
 @media screen and (max-width: 1230px) {
+
+    /* Cards */
+
     .home-cards-container {
         top: 610px;
     }
@@ -180,6 +184,7 @@
     } 
 
     /* W.C.M quote */
+
     .quote-container {
         padding-top: 57px;
         padding-bottom: 38px;
@@ -197,7 +202,6 @@
         font-size: 16px;
     }
     
-
     .fundador-hogar {
         font-size: 17px;
     }
@@ -209,8 +213,6 @@
         max-width: 450px;
     }   
 }
-
-
 
 @media screen and (max-width: 980px) {
 
@@ -226,7 +228,6 @@
 }
 
 /* W.C.M quote */
-
 
 .quote-container {
     padding: 40px 0;
@@ -258,17 +259,17 @@
 }
 
 
-
 @media  screen and (max-width: 557px) {
+
+    /* W.C.M quote */
+
     .quote-container {
         margin-top: 41rem;
-    
     }
 }
 
 @media screen and (max-width: 520px) {
 
-  
     /* Cards */
     
     .home-cards-container {
@@ -277,14 +278,14 @@
          gap: 0;
     }
     
-        .white-wave-mb {
-            display: block;
-            position: absolute;
-            bottom: 20px;
-        }
+    .white-wave-mb {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+    }
 
-    
     /* W.C.M quote */
+
     .quote-container {
         margin-top: 44rem;
     }
@@ -329,7 +330,6 @@
          padding-bottom: 30px;
     }
 
-    
     .white-wave-mb {
         display: block;
         position: absolute;
@@ -337,6 +337,7 @@
     }
     
     /* W.C.M quote */
+
     .quote-container {
         margin-top: 38rem;
         padding-top: 0;
@@ -347,6 +348,7 @@
         width: 50px;
     }
 
-    
-    }
+}
+
+/* ------ End media queries -------- */
 
