@@ -55,13 +55,13 @@ const Proyectos = () => {
         <h1>Nuestros Proyectos</h1>
         <Swiper className='card-container' {...params}>
           {proyects.map((proyect) => {
-            const { id, title, description, img, bgColor } = proyect
+            const { id, title, description, url, bgColor } = proyect
             return (
               <SwiperSlide key={id}>
                 <div style={{ background: bgColor }} className='proyect-card'>
                   <div className='title'>
                     <img
-                      src={require(`../../assets/icons/proyectos/${img}`)}
+                      src={require(`../../assets/icons/proyectos/${url}`)}
                       alt={title}
                     />
                     <h2>

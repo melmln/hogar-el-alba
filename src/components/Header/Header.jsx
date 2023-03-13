@@ -12,8 +12,6 @@ import { CategoryContext } from '../../context/CategoryContext'
 const Header = () => {
   const { activeCategory } = useContext(CategoryContext)
 
-  console.log(activeCategory)
-
   const [bmOpen, setBmOpen] = useState(false)
 
   const bmChange = () => {
@@ -28,8 +26,6 @@ const Header = () => {
     activeCategory === 'servicios' ? 'category-active' : ''
   const contactoIsActive =
     activeCategory === 'contacto' ? 'category-active' : ''
-
-    console.log(nosotrosIsActive)
 
   return (
     <header>

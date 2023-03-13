@@ -2,35 +2,35 @@
     {
         "id": "1",
         "title": "Cuidame",
-        "img": "proyecto-cuidame.png",
+        "url": "proyecto-cuidame.png",
         "bgColor": "#E94567",
         "description": "Proyecto de familias solidarias. Destinado a los niños y niñas de 0 a 6 años. Su objetivo es brindar al niño o niña un ambiente familiar estable, en el que pueda recibir cuidados, atención y la educación necesaria que facilite su desarrollo integral, sin perder su identidad de origen hasta que se resuelva su situación singular."
     },
     {
         "id": "2",
         "title": "Nea",
-        "img": "proyecto-nea.png",
+        "url": "proyecto-nea.png",
         "bgColor": "#39B69F",
         "description": "Nueva Esperanza en Adicciones brinda acompañamiento e inclusión social , a personas  y familias que atraviesan un consumo problemático de sustancias."
     },
     {
         "id": "3",
         "title": "Amparo",
-        "img": "proyecto-amparo.png",
+        "url": "proyecto-amparo.png",
         "bgColor": "#9D68A6",
         "description": "Este proyecto propone brindar prevención, orientación, atención, contención, asistencia, promoción de salud, promoción en educación formal e informal, capacitación laboral, entre otros, a familias en crisis permanente o en riesgo social elevado."
     },
     {
         "id": "4",
         "title": "Albores",
-        "img": "proyecto-albores.png",
+        "url": "proyecto-albores.png",
         "bgColor": "#FDD354",
         "description": "Dirigido a adolescentes y jóvenes de 12 a 21 años, que se encuentren con sus derechos vulnerados y afectados de alguna manera por problemáticas sociales, ofreciendo capacitación laboral, talleres de prevención."
     },
     {
         "id": "5",
         "title": "Aldea",
-        "img": "proyecto-aldea.png",
+        "url": "proyecto-aldea.png",
         "bgColor": "#F3940E",
         "description": "Hogar convivencial. Asiste, ampara y protege a niños, niñas y adolescentes de 3 a 18  años con derechos vulnerados. Los niños viven en el hogar hasta que se resuelve su situación legal, se le brinda  una respuesta alternativa, excepcional y provisoria que garantice el cumplimiento de sus derechos amenazados."
     }
