@@ -37,24 +37,24 @@ const Header = () => {
         </div>
         <div className={`categories-container ${bmOpen && 'open'}`}>
           <ul className='categories'>
-            <li className={`category ${nosotrosIsActive}`}>
+            <li className={`category ${nosotrosIsActive}`} onClick={bmChange}>
               <Link to='/nosotros'>Nosotros</Link>
             </li>
 
-            <li className={`category ${proyectosIsActive}`}>
+            <li className={`category ${proyectosIsActive}`} onClick={bmChange}>
               <Link to='/proyectos'>Proyectos</Link>
             </li>
 
-            <li className={`category ${serviciosIsActive}`}>
+            <li className={`category ${serviciosIsActive}`} onClick={bmChange}>
               <Link to='/servicios'>Servicios</Link>
             </li>
 
-            <li className={`category ${contactoIsActive}`}>
+            <li className={`category ${contactoIsActive}`} onClick={bmChange}>
               <Link to='/contacto'>Contacto</Link>
             </li>
           </ul>
 
-          <Link to='/quiero-ayudar' className='donate-btn'>
+          <Link to='/quiero-ayudar' className='donate-btn' onClick={bmChange}>
             QUIERO AYUDAR
           </Link>
         </div>

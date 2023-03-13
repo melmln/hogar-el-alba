@@ -10,7 +10,7 @@ nav {
   align-items: center;
   background-color: var(--white);
   width: 100%;
-  padding: 0 50px;
+  padding: 20px 50px;
 }
 
 .category-active {
@@ -113,7 +113,7 @@ donate-btn:hover {
     width: 100%;
     padding: 27.82px 0;
     background-color: var(--white);
-    padding: 0 50px;
+    padding: 10px 50px 5px 50px;
     flex-direction: row-reverse;
   }
 
