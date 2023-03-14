@@ -38,7 +38,7 @@
      width: 100%;
      gap: 30px;
      position: absolute;
-     top: 500px;
+     top: 600px;
      left: 0;
      padding: 0 90px;
      padding-bottom: 40px;
@@ -157,7 +157,7 @@
     /* Cards */
 
     .home-cards-container {
-        top: 610px;
+        top: 670px;
     }
 
     .home-card-content {
@@ -242,7 +242,7 @@
 .white-wave-mb {
     display: block;
     position: absolute;
-    bottom: 95px;
+    bottom: 5px;
 }
 
 .white-wave {
@@ -266,6 +266,12 @@
     .quote-container {
         margin-top: 41rem;
     }
+
+    /* Wave */
+
+    .white-wave-mb {
+        bottom: 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -277,6 +283,7 @@
          padding: 0 20px;
          margin-top: 140px;
          gap: 0;
+         top: 650px;
     }
     
     .white-wave-mb {
