@@ -61,12 +61,9 @@ const Proyectos = () => {
                 <div style={{ background: bgColor }} className='proyect-card'>
                   <div className='title'>
                     <img
-                      src={require(`../../assets/icons/proyectos/${url}`)}
+                      src={require(`../../assets/img/proyectos/${url}`)}
                       alt={title}
                     />
-                    <h2>
-                      Proyecto <span>{title}</span>
-                    </h2>
                   </div>
                   <p>{description}</p>
                 </div>

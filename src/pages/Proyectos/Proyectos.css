@@ -36,10 +36,12 @@
 }
 
 .proyect-card img {
-  width: 75px;
   height: 75px;
   object-fit: contain;
-  margin-right: 10px;
+}
+
+.proyect-card img[alt='Nea'] {
+  height: 100px;
 }
 
 .proyect-card p {
@@ -59,20 +61,6 @@
   margin-top: 35px;
   background-color: #ebebf099;
   height: 117px;
-}
-
-.proyect-card .title h2,
-.proyect-card .title span {
-  font-family: var(--capriola);
-  display: block;
-}
-
-.title h2 {
-  font-size: 1rem;
-}
-
-.title span {
-  font-size: 2rem;
 }
 
 div.swiper-button-next, div.swiper-button-prev {
