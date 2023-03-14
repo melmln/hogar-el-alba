@@ -103,7 +103,7 @@
     /* Background */
 
     .financiamiento {
-        height: 970px;
+        height: 900px;
         background-image: url(../../../assets/img/nosotros/financiamiento-mb.png);
     } 
 
@@ -111,7 +111,7 @@
 
     .info-financiamiento-container {
         gap: 20px;
-        padding: 40px;
+        padding: 20px;
         background-size: cover;
         flex-direction: column;
     }
@@ -127,7 +127,7 @@
     /* Background */
 
     .financiamiento {
-        height: 900px;
+        height: 880px;
     } 
     
     /* Subcategories */
