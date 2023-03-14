@@ -39,7 +39,7 @@
   .card-image-container:hover {
     transform: scale(1.05);
     transition: ease 0.7s;
-    z-index: 3;
+    z-index: 2;
   }
 
   .image-container {
