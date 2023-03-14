@@ -154,6 +154,18 @@
         height: 400px;
         background-image: url(../../../assets/img/nosotros/william-c-morris-mb.png);
     }
+
+    .info-text-wcm {
+        font-size: 14px;
+        padding: 0 15px;
+        padding-bottom: 20px;
+    }
+
+    .wcm-bold {
+        padding-right: 19px;
+    }
+    
+    
 }
 
 /*--------- En media queries ---------*/

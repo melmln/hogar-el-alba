@@ -74,7 +74,7 @@ const Home = () => {
           <img className='line-loop' src={whiteLineLoop} alt='line-loop' />
         </div>
 
-        <span className='fundador-hogar'>-Fundador Hogar-</span>
+        <span className='fundador-hogar'>-Fundador del hogar-</span>
         <p className='quote-william-morris'>
           "Pasaré por este mundo una sola vez. Si hay alguna palabra bondadosa
           que yo pueda pronunciar alguna noble acción que yo pueda efectuar diga

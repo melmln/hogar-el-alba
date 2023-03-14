@@ -100,7 +100,8 @@
 @media screen and (max-width: 980px) {
 
 .nosotros {
-    height: 930px;
+    height: 1000px;
+    background-image: url(../../assets/img/nosotros/nosotros-mb.png);
 } 
     
     
@@ -123,7 +124,8 @@
     /* Background */
 
     .nosotros {
-        height: 840px;
+        height: 950px;
+      
     } 
 
     /* Subcategories */
@@ -144,21 +146,13 @@
     }
 }
 
-@media screen and (max-width: 421px) {
-
-    /* Background */
-
-    .nosotros {
-        height: 925px;
-    }
-}
 
 @media screen and (max-width: 375px) {
     
     /* Background */
 
     .nosotros {
-        height: 950px;
+        height: 990px;
     }
 }
 

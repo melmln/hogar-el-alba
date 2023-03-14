@@ -100,10 +100,10 @@
 
     /* Background */
 
-    .historia {
-        height: 850px;
-    } 
-
+   .historia {
+    height: 1090px;
+    background-image: url(../../../assets/img/nosotros/historia-mb.png);
+} 
     /* Info */
         
     .info-historia-container {
@@ -127,7 +127,7 @@
     /* Background */
 
     .historia {
-        height: 880px;
+        height: 1080px;
     } 
 
     /* Subcategories */
@@ -164,7 +164,7 @@
     /* Background */
 
     .historia {
-        height: 928px;
+        height: 1090px;
     } 
 
     /* Subcategories */
@@ -189,24 +189,8 @@
 }
 
 
-@media screen and (max-width: 400px) {
-    
-    /* Background */
-
-    .historia {
-        height: 970px;
-    } 
-
-}
-
 @media screen and (max-width: 375px) {
     
-    /* Background */
-
-    .historia {
-        height: 955px;
-    } 
-
     /* Subactegories */
 
     .nosotros-btn {
@@ -235,7 +219,7 @@
     /* Background */
 
     .historia {
-        height: 900px;
+        height: 1000px;
     } 
 
     /* Subcategories */
