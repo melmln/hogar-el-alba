@@ -1,7 +1,7 @@
 import './Proyectos.css'
 import { useContext } from 'react'
 import { CategoryContext } from '../../context/CategoryContext'
-import background from '../../assets/img/proyectos/pies-y-manos-de-bebe.png'
+import background from '../../assets/img/proyectos/plaza.png'
 import proyects from '../../utils/proyectos.json'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper'

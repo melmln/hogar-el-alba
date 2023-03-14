@@ -59,7 +59,7 @@ const Footer = () => {
               target='_blank'
               className='flex'
             >
-              <p className='google-comments'>82 comentarios de google</p>
+              <p className='google-comments'>Comentarios de google</p>
             </Link>
           </li>
         </ul>
