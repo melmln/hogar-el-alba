@@ -18,6 +18,7 @@
 main {
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 120px;
 }
 
 /* html {
@@ -91,3 +92,8 @@ main h1 {
     text-align: center;
 }
 
+@media screen and (max-width: 980px) {
+    main {
+        margin-top: 65px;
+    }
+}
