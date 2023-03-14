@@ -68,8 +68,6 @@
 .info-text-financiamiento-container {
     display: flex;
     align-items: flex-start;
-    padding-top: 20px;
-
 }
 
 .info-text-financiamiento {
@@ -122,12 +120,19 @@
     }
 }
 
+
+@media screen and (max-width: 570px) {
+    .financiamiento {
+        height: 870px;
+    } 
+}
+
 @media screen and (max-width: 450px) {
 
     /* Background */
 
     .financiamiento {
-        height: 880px;
+        height: 830px;
     } 
     
     /* Subcategories */
@@ -156,7 +161,7 @@
     /* Background */
     
     .financiamiento {
-        height: 890px;
+        height: 840px;
     } 
 
     /* Sunbcategories */
@@ -184,7 +189,7 @@
     /* Background */
 
     .financiamiento {
-        height: 850px;
+        height: 800px;
     } 
     
     /* Subcategories */
@@ -196,7 +201,7 @@
     /* Info */
 
     .info-financiamiento-container {
-        padding: 30px;
+        padding: 20px;
         gap: 20px;
         padding-bottom: 0;
 

@@ -6,7 +6,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 850px;
+    height: 830px;
     background-position-y: bottom;
 } 
 
@@ -81,7 +81,6 @@
 .info-text-nosotros-container {
     display: flex;
     align-items: flex-start;
-    padding-top: 20px;
 }
 
 .info-text-nosotros {
@@ -137,7 +136,7 @@
     /* Info */
 
     .info-nosotros-container {
-        gap: 0;
+        gap: 20px;
         padding-bottom: 0;
     }
 
