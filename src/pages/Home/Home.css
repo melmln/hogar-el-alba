@@ -269,6 +269,7 @@
 }
 
 @media screen and (max-width: 520px) {
+    
 
     /* Cards */
     
@@ -319,15 +320,50 @@
 
     }
 
+@media screen and (max-width: 450px) {
+   
+    
+    /* Background */
+
+    .banner-container {
+        height: 350px;
+     }
+ 
+     /* Cards */
+     
+     .home-cards-container {
+          padding-bottom: 10px;   
+          top: 250px;
+     }
+ 
+     /* Wave */
+ 
+     .white-wave-mb {
+         top: 280px;
+     } 
+
+     .quote-container {
+        margin-top: 46rem;
+    }
+
+}
+
 @media screen and (max-width: 375px) {
+
+    /* Background */
+
+    .banner-container {
+       height: 350px;
+    }
 
     /* Cards */
     
     .home-cards-container {
          padding: 0 35px;
-         margin-top: 170px;
+         margin-top: 0px;
          gap: 0;
-         padding-bottom: 30px;
+         top: 400px;
+     
     }
 
     .white-wave-mb {
@@ -347,6 +383,12 @@
     .line, .line-loop {
         width: 50px;
     }
+
+    /* Wave */
+
+    .white-wave-mb {
+        top: 280px;
+    } 
 
 }
 
