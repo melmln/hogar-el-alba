@@ -32,8 +32,9 @@ const Financiamiento = () => {
   
             <div className='info-text-financiamiento-container'>
                 <div className='info-text-financiamiento'>
-                  <p>El Hogar El Alba se sostiene con diversos recursos financieros. Desde hace más de 20 años, a través de convenios realizados con el Gobierno de la Provincia de Buenos Aires, el hogar recibe becas para el sostenimiento de los niños. Por otra parte, se llevan adelante microemprendimientos relacionados con actividades rurales y de campo, como producción y venta de quesos, miel y productos de panadería.</p>
-                  <p>Se realizan articulaciones con entidades que colaboran solidariamente con el hogar. Algunas de ellas nacionales, como el banco de alimentos, entidades religiosas, escuelas y organizaciones de la comunidad; otras extranjeras como escuelas e iglesias.</p>
+                  <p>El hogar El Alba tiene diversas fuentes de financiamiento. Mantiene convenios con organismos nacionales y provinciales. Por otra parte, se llevan adelante micro emprendimientos relacionados con la producción de artículos de campo y panadería.</p>
+                  <p> Se alquilan espacios para eventos recreativos, sociales y deportivos.</p> 
+                  <p> Se reciben donaciones de todo tipo desde distintos sectores de la comunidad, y también a través del “círculo de amigos”, con aporte de dinero periódico de personas o familias.</p>
                 </div>
             </div>
          </div>

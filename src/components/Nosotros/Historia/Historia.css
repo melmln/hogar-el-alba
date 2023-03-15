@@ -67,6 +67,7 @@
 .info-text-historia-container {
     display: flex;
     align-items: flex-start;
+    padding-top: 20px;
 }
 
 .info-text-historia {
@@ -113,6 +114,9 @@
         gap: 20px;
     }
 
+    .info-text-historia-container {
+        padding-top: 0;
+    }
 
     .info-text-historia {
         font-size: 16px;

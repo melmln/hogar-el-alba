@@ -30,7 +30,7 @@ const Home = () => {
           <img src={yellowCard} alt='yellow-card' className='img-proyectos' />
 
           <div className='home-card-content'>
-            <p>¿Sabías que el hogar cuenta con 5 proyectos?</p>
+            <p>El hogar El Alba cuenta con 5 proyectos</p>
             <Link to='/proyectos'>
               <button className='home-card-btn proyectos-btn'>CONOCELOS</button>
             </Link>
@@ -42,7 +42,7 @@ const Home = () => {
           <img src={redCard} alt='red-card' className='img-proyectos' />
           
           <div className='home-card-content'>
-            <p>Tu aporte es muy valioso para el hogar</p>
+            <p>Tu aporte es muy valioso para nosotros</p>
             <Link to='/quiero-ayudar'>
               <button className='home-card-btn donar-btn'>SUMATE</button>
             </Link>
@@ -74,7 +74,7 @@ const Home = () => {
           <img className='line-loop' src={whiteLineLoop} alt='line-loop' />
         </div>
 
-        <span className='fundador-hogar'>-Fundador del hogar-</span>
+        <span className='fundador-hogar'>-Fundador-</span>
         <p className='quote-william-morris'>
           "Pasaré por este mundo una sola vez. Si hay alguna palabra bondadosa
           que yo pueda pronunciar alguna noble acción que yo pueda efectuar diga
