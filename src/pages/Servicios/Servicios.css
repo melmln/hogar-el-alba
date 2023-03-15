@@ -6,7 +6,6 @@
     padding: 0 80px;
     padding-top: 66.5px;
     padding-bottom: 130px;
-    justify-content: center;
 } 
 
 .servicios-title {
@@ -28,9 +27,7 @@
   .gallery-images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: dense;
     grid-gap: 20px;
-    justify-content: center;
   }
 
   .card-image-container {
@@ -41,7 +38,7 @@
   .card-image-container:hover {
     transform: scale(1.05);
     transition: ease 0.7s;
-    z-index: 2;
+    z-index: 3;
   }
 
   .image-container {
@@ -50,8 +47,9 @@
 
   .image-container img {
     display: block;
-    width: 305px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
   }
 
   .caption {
