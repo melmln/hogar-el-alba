@@ -37,7 +37,6 @@ const Header = () => {
     let outsideClickHandler = (e) => {  // Cambio el estado del burguer menu abierto a false si el evento se dispara
       if(!bmRef.current.contains(e.target)) {
         setBmOpen(false);
-        console.log(bmRef.current)
       };
       
     };
