@@ -12,15 +12,6 @@
 
 /* Subcategories */
 
-.info-nosotros-container {
-    display: flex;
-    gap: 50px;
-    background-color: var(--lightBlue);
-    padding: 83px;
-    padding-bottom: 30px;
-    width: 100%;
-}
-
 .subcategories-nosotros-container {
     display: flex;
     flex-direction: column;
@@ -78,9 +69,20 @@
 
 /* Info */
 
+.info-nosotros-container {
+    display: flex;
+    gap: 50px;
+    background-color: var(--lightBlue);
+    padding: 83px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+
 .info-text-nosotros-container {
     display: flex;
     align-items: flex-start;
+    padding-top: 20px;
 }
 
 .info-text-nosotros {
@@ -111,6 +113,9 @@
     gap: 20px;
 }
 
+.info-text-nosotros-container {
+    padding-top: 0;
+}
 
 .info-text-nosotros {
     font-size: 16px;
