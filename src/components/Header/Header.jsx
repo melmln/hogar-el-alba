@@ -1,31 +1,54 @@
-import './Header.css'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import './Header.css';
+import { Link } from 'react-router-dom';
+import { useState, useEffect, useRef, useContext } from 'react';
 /* Assets */
-import logo from '../../../src/logo.png'
-import bm from '../../assets/img/bm.png'
-import headerBackground from '../../assets/img/bck-header.png'
+import logo from '../../../src/logo.png';
+import bm from '../../assets/img/bm.png';
+import headerBackground from '../../assets/img/bck-header.png';
 // Context
-import { useContext } from 'react'
-import { CategoryContext } from '../../context/CategoryContext'
+import { CategoryContext } from '../../context/CategoryContext';
 
 const Header = () => {
   const { activeCategory } = useContext(CategoryContext)
 
   const [bmOpen, setBmOpen] = useState(false)
+  let bmRef = useRef()
 
   const bmChange = () => {
     setBmOpen(!bmOpen)
   }
 
   const nosotrosIsActive =
-    activeCategory === 'nosotros' ? 'category-active' : ''
+        activeCategory === 'nosotros' ? 'category-active' : '';
+
   const proyectosIsActive =
-    activeCategory === 'proyectos' ? 'category-active' : ''
+        activeCategory === 'proyectos' ? 'category-active' : '';
+
   const serviciosIsActive =
-    activeCategory === 'servicios' ? 'category-active' : ''
+        activeCategory === 'servicios' ? 'category-active' : '';
+
   const contactoIsActive =
-    activeCategory === 'contacto' ? 'category-active' : ''
+        activeCategory === 'contacto' ? 'category-active' : '';
+
+  // Click outside sidebar 
+
+  useEffect(() => {
+
+    let outsideClickHandler = (e) => {  // Cambio el estado del burguer menu abierto a false si el evento se dispara
+      if(!bmRef.current.contains(e.target)) {
+        setBmOpen(false);
+        console.log(bmRef.current)
+      };
+      
+    };
+    document.addEventListener('mousedown', outsideClickHandler);  // Hago un listener y llamo a la función de arriba
+
+    return () => {
+      document.addEventListener('mousedown', outsideClickHandler);
+ }
+  }, []);
+
+
 
   return (
     <header>
@@ -35,7 +58,7 @@ const Header = () => {
             <img src={logo} alt='logo' className='logo' />
           </Link>
         </div>
-        <div className={`categories-container ${bmOpen && 'open'}`}>
+        <div className={`categories-container ${bmOpen && 'open'}`} ref={bmRef}>
           <ul className='categories'>
             <li className={`category ${nosotrosIsActive}`} onClick={bmChange}>
               <Link to='/nosotros'>Nosotros</Link>
@@ -70,4 +93,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

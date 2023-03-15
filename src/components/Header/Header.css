@@ -144,7 +144,6 @@ donate-btn:hover {
     position: absolute;
     left: 30px;
     top: 30px;
-    z-index: 5;
   }
 
   .bm-container:hover {
