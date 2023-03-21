@@ -113,6 +113,7 @@
         padding: 20px;
         background-size: cover;
         flex-direction: column;
+        padding-top: 45px;
     }
 
     .info-text-financiamiento-container {

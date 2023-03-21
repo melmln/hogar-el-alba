@@ -116,6 +116,7 @@
     background-size: cover;
     flex-direction: column;
     gap: 20px;
+    padding-top: 45px;
 }
 
 .info-text-nosotros-container {
