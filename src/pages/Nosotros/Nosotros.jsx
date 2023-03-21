@@ -18,7 +18,9 @@ const Nosotros = () => {
         <div className='subcategories-nosotros-container'>
           
           <Link to='/nosotros'>
-            <button className='acerca-nosotros-btn'>Acerca de nosotros</button>
+            <button className='acerca-nosotros-btn'>
+                <h1>Acerca de nosotros</h1>
+            </button>
           </Link>
 
           <Link to='/william-morris'>

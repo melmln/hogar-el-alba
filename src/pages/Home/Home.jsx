@@ -11,7 +11,6 @@ import irregularHome from '../../assets/img/home/irregular-home.png';
 import whiteWaveMobile from '../../assets/img/home/white-wave-mobile.png';
 import yellowCard from '../../assets/img/home/yellow-card.png';
 import redCard from '../../assets/img/home/red-card.png';
-import blueCard from '../../assets/img/home/blue-card.png';
 
 const Home = () => {
   const { changeCategory } = useContext(CategoryContext)
@@ -45,18 +44,6 @@ const Home = () => {
             <p>Tu aporte es muy valioso para nosotros</p>
             <Link to='/quiero-ayudar'>
               <button className='home-card-btn donar-btn'>SUMATE</button>
-            </Link>
-          </div>
-
-        </div>
-
-        <div className='home-card adoptar'>
-          <img src={blueCard} alt='blue-card' className='img-proyectos' />
-          
-          <div className='home-card-content'>
-            <p>¿Querés conocer los requisitos para adoptar?</p>
-            <Link to='/contacto'>
-              <button className='home-card-btn adoptar-btn'>CONTACTATE</button>
             </Link>
           </div>
 

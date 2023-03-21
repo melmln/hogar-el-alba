@@ -4,7 +4,7 @@
 
 .gallery-container {
     padding: 0 80px;
-    padding-top: 66.5px;
+    padding-top: 50px;
     padding-bottom: 130px;
 } 
 
@@ -123,6 +123,21 @@
         
     }
 
+@media  screen and (max-width: 480px) {
+
+    .gallery-container {
+      padding: 0 20px;
+      padding-bottom: 30px;
+    }
+    .servicios-title {
+      font-size: 16px;
+    }
+
+    .servicios-title::after {
+      border-bottom: 2px solid var(--white);
+    }
+}
+
   @media screen and (max-width: 375px) {
 
     .caption {
@@ -130,7 +145,7 @@
         font-size: 16px;
       }
         
-    }
+  }
     
     /*-------- End media queries ---------*/
 
