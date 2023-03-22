@@ -73,6 +73,15 @@
 .qr-section__code h3 {
   text-align: center;
   font-weight: lighter;
+  font-size: 20px;
+}
+
+.qr-section__code h3 span {
+  font-size: 1.1em;
+  font-family: var(--capriola);
+  font-size: 20px;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .qr-section__code img {
@@ -238,6 +247,14 @@
     height: 40px;
   }
 
+  .qr-section{
+    min-height: 0;
+  }
+
+  .qr-section__info > * {
+    margin: 15px 0;
+  }
+
   .qr-section,
   .qr-section__info p:first-child,
   .qr-section__info h3,
@@ -265,6 +282,10 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+  }
+
+  .qr-section__code h3 span {
+    font-size: 12px;
   }
 
   .donation-section__info ul {

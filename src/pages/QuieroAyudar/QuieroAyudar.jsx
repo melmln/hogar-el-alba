@@ -6,9 +6,15 @@ import waveDown from '../../assets/img/quiero-ayudar/wave-bottom.png'
 import qr from '../../assets/img/quiero-ayudar/qr-code.png'
 import line from '../../assets/img/quiero-ayudar/line.png'
 
+import { useContext } from 'react'
+import { CategoryContext } from '../../context/CategoryContext'
+
 const QuieroAyudar = () => {
+
+  const { changeCategory } = useContext(CategoryContext)
+
   return (
-    <main className='quiero-ayudar'>
+    <main className='quiero-ayudar' onLoad={() => changeCategory('')}>
       <section className='background-section'>
         <img
           src={quieroAyudarBanner}
@@ -48,7 +54,7 @@ const QuieroAyudar = () => {
           </p>
         </div>
         <div className='qr-section__code'>
-          <h3>Escanea el código QR para colaborar</h3>
+          <h3>Escanea el código QR <span>con la App de Mercadopago</span> para colaborar</h3>
           <img src={qr} alt='QR' />
         </div>
       </section>
